@@ -1,6 +1,6 @@
-REM-----------------------------
+REM -----------------------------
 REM FFMpegFrontEnd
-REM-----------------------------
+REM -----------------------------
 echo off
 cls
 REM
@@ -63,7 +63,7 @@ GOTO STARTCOMPILE
 
 :STARTCOMPILE
 echo "%dirlocation%"
-del *.class
+del /q *.class
 echo Create the Manifest file:
 echo Main-Class: FFMpegFrontEnd >MANIFEST.MF
 echo .
@@ -107,8 +107,8 @@ echo Build the JAR file:
 "%dirlocation%jar.exe" cfm "FFMpegFrontEnd.jar" MANIFEST.MF *.class ..\icons\*.gif ..\icons\*.png  "FFMpegFrontEnd*.txt"
 
 REM
-del *.class
-del ..\00__common_code\*.class
+del /q *.class
+del /q ..\00__common_code\*.class
 REM del *.gif
 
 :END
