@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.03";
+   private static final String APPLICATION_VERSION          = "v0.04";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -129,6 +129,7 @@ public class FFMpegFrontEnd extends JFrame
    //private JButton     pasteMP4VideoButton             = new JButton      ("Paste URLs MP4",           Icons.paste_clipboard_icon);
    //private JButton     pasteMP3AudioButton             = new JButton      ("Paste URLs MP3 Audio",     Icons.paste_clipboard_icon);
    private JButton     generateMP4FFBatButton               = new JButton      ("Generate MP4 FF BAT",           Icons.file_save_icon);
+   private JButton     generateDeleteRedundantMp4BatButton  = new JButton      ("Generate Delete Redundant MP4 BAT",           Icons.file_save_icon);
    //private JButton     deleteBATFileButton             = new JButton      ("Reset",    Icons.trash_garbage_icon);
    //private JButton     appendBATFileButton             = new JButton      ("Append to Download Commands", Icons.file_save_icon);
    private JButton     aboutButton                     = new JButton      ("Help",     Icons.help_icon);
@@ -206,6 +207,8 @@ public class FFMpegFrontEnd extends JFrame
 
 
       buttonPanel.add (generateMP4FFBatButton);
+      buttonPanel.add (generateDeleteRedundantMp4BatButton);
+
       buttonPanel.add (new JLabel ("    ") );
 
       buttonPanel.add (scanForFilesButton);
@@ -237,8 +240,9 @@ public class FFMpegFrontEnd extends JFrame
 
       thePanel.add (southPanel,                BorderLayout.SOUTH);
 
-      scanForFilesButton.addActionListener (event -> buildMP4FilesList () );
-      generateMP4FFBatButton.addActionListener  (event -> generateMP4FFBat () );
+      scanForFilesButton.addActionListener                   (event -> buildMP4FilesList () );
+      generateMP4FFBatButton.addActionListener               (event -> generateMP4FFBat () );
+      generateDeleteRedundantMp4BatButton.addActionListener  (event -> generateDeleteRedundantMp4Bat () );
 
       aboutButton.addActionListener             (event -> Moose_Utils.displayAboutDialog (FFMpegFrontEnd.this, APPLICATION_TITLE, APPLICATION_AUTHOR, ""));
       exitButton.addActionListener              (event -> exitApplication ());
@@ -520,8 +524,28 @@ public class FFMpegFrontEnd extends JFrame
       Moose_Utils.writeOrAppendStringToFile ("process_files.bat", sb.toString(), false);
    }
 
-   private void generateMP4FilesThatCanBeDeletedBat ()
+   private void generateDeleteRedundantMp4Bat ()
    {
+      StringBuffer sb = new StringBuffer();
+
+      sb.append ("echo off" + "\n");
+      sb.append ("cls"      + "\n");
+
+      for (int k = 0; k < filesArrayList.size(); k++)
+      {
+          File destFile = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
+
+          if (Moose_Utils.fileExists (destFile)              == true)
+          {
+             //  The "_ff.mp4" exists, so delete the original "mp4" file.
+             sb.append ("del " + "\"" + filesArrayList.get(k).toString() + "\"" + "\n" );
+          }
+      }
+
+      sb.append ("echo DONE !"      + "\n");
+      sb.append ("pause"            + "\n");
+
+      Moose_Utils.writeOrAppendStringToFile ("delete_redundant_files.bat", sb.toString(), false);
    }
 
 
