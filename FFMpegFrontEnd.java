@@ -453,11 +453,12 @@ public class FFMpegFrontEnd extends JFrame
          if ((fileNameStr.toLowerCase().endsWith ("_ff.mp4")                 == true) ||
              (fileNameStr.toLowerCase().contains ("00_common_files")         == true) ||
              (fileNameNoPathStr.toLowerCase().startsWith ("zoom_")           == true) ||
-             (fileNameNoPathStr.toLowerCase().startsWith ("MAH0")            == true) ||
-             (fileNameNoPathStr.toLowerCase().startsWith ("SAM_")            == true) ||
-             (fileNameStr.toLowerCase().contains ("- MAH0")                  == true) ||
-             (fileNameStr.toLowerCase().contains ("- SAM_")                  == true) ||
-             (fileNameStr.toLowerCase().contains ("Zoom-meeting-invitation") == true) )
+             (fileNameNoPathStr.toLowerCase().startsWith ("mah0")            == true) ||
+             (fileNameNoPathStr.toLowerCase().startsWith ("sam_")            == true) ||
+             (fileNameStr.toLowerCase().contains ("- mah0")                  == true) ||
+             (fileNameStr.toLowerCase().contains ("- sam_")                  == true) ||
+             (fileNameStr.toLowerCase().contains ("zoom_")                   == true) ||
+             (fileNameStr.toLowerCase().contains ("zoom-meeting-invitation") == true) )
          {
             filesArrayList.remove (k);
          }
@@ -473,10 +474,25 @@ public class FFMpegFrontEnd extends JFrame
          System.out.println (k + ". " + filesArrayList.get(k).toString() ); // File name with full absolute path.
       }
 
+      long totalFileSizeBytes = getSizeOfAllFilesInArrayList (filesArrayList);
 
+      System.out.println ();
+      System.out.println ("Total size: " + Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalFileSizeBytes, 1) );
    }
 
+   private long getSizeOfAllFilesInArrayList (ArrayList<File> filesArrayList)
+   {
+      long totalFileSizeBytes = 0;
 
+      if (filesArrayList != null)
+      {
+         for (int k = 0; k < filesArrayList.size(); k++)
+         {
+            totalFileSizeBytes += Moose_Utils.getFileSizeBytes (filesArrayList.get(k) );
+         }
+      }
+      return totalFileSizeBytes;
+   }
 /*
    private void downloadUsingBAT ()
    {
