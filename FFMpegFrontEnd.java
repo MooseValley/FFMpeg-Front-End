@@ -358,6 +358,8 @@ public class FFMpegFrontEnd extends JFrame
       // File.toString(): File name with full absolute path.
       // File.getName():  File name (no path).
 
+      resultsTextArea.setText("");
+
       System.out.println ("buildMP4FilesList (): '" + folderPathTextField.getText() + "' ... ");
 
       filesArrayList = Moose_Utils.getAllFilesInDirecoryAndAllSubDirectories (folderPathTextField.getText() );
@@ -477,6 +479,8 @@ public class FFMpegFrontEnd extends JFrame
       for (int k = 0; k < filesArrayList.size(); k++)
       {
          System.out.println (k + ". " + filesArrayList.get(k).toString() ); // File name with full absolute path.
+
+         resultsTextArea.append (filesArrayList.get(k).getName() + "\n");
       }
 
       long totalFileSizeBytes = getSizeOfAllFilesInArrayList (filesArrayList);
