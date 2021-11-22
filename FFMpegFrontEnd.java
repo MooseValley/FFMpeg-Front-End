@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.01";
+   private static final String APPLICATION_VERSION          = "v0.03";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -126,10 +126,10 @@ public class FFMpegFrontEnd extends JFrame
    private JLabel      applicationAuthorLabel          = new JLabel       (""); //"          by " + APPLICATION_AUTHOR + " ");
    private JTextField  folderPathTextField             = new JTextField   (60);
    private JButton     scanForFilesButton              = new JButton      ("List Files", Icons.paste_clipboard_icon);
-   private JButton     pasteMP4VideoButton             = new JButton      ("Paste URLs MP4",           Icons.paste_clipboard_icon);
-   private JButton     pasteMP3AudioButton             = new JButton      ("Paste URLs MP3 Audio",     Icons.paste_clipboard_icon);
-   private JButton     downloadButton                  = new JButton      ("Download (BAT)",           Icons.file_save_icon);
-   private JButton     deleteBATFileButton             = new JButton      ("Reset",    Icons.trash_garbage_icon);
+   //private JButton     pasteMP4VideoButton             = new JButton      ("Paste URLs MP4",           Icons.paste_clipboard_icon);
+   //private JButton     pasteMP3AudioButton             = new JButton      ("Paste URLs MP3 Audio",     Icons.paste_clipboard_icon);
+   private JButton     generateMP4FFBatButton               = new JButton      ("Generate MP4 FF BAT",           Icons.file_save_icon);
+   //private JButton     deleteBATFileButton             = new JButton      ("Reset",    Icons.trash_garbage_icon);
    //private JButton     appendBATFileButton             = new JButton      ("Append to Download Commands", Icons.file_save_icon);
    private JButton     aboutButton                     = new JButton      ("Help",     Icons.help_icon);
    private JButton     exitButton                      = new JButton      ("Exit",     Icons.exit_icon);
@@ -205,16 +205,16 @@ public class FFMpegFrontEnd extends JFrame
       centerPanel.add (resultsTextAreaScrollPane);
 
 
-      buttonPanel.add (downloadButton);
+      buttonPanel.add (generateMP4FFBatButton);
       buttonPanel.add (new JLabel ("    ") );
 
       buttonPanel.add (scanForFilesButton);
-      buttonPanel.add (pasteMP4VideoButton);
-      buttonPanel.add (pasteMP3AudioButton);
-      buttonPanel.add (new JLabel ("    ") );
+      //buttonPanel.add (pasteMP4VideoButton);
+      //buttonPanel.add (pasteMP3AudioButton);
+      //buttonPanel.add (new JLabel ("    ") );
 
-      buttonPanel.add (deleteBATFileButton);
-      buttonPanel.add (new JLabel ("    ") );
+      //buttonPanel.add (deleteBATFileButton);
+      //buttonPanel.add (new JLabel ("    ") );
 
       buttonPanel.add (aboutButton);
       buttonPanel.add (exitButton);
@@ -224,8 +224,8 @@ public class FFMpegFrontEnd extends JFrame
       //southPanel.add (flow2Panel);
       flowPanel.add (new JLabel ("YouTube URL: ") );
       flowPanel.add (scanForFilesButton);
-      flowPanel.add (pasteMP4VideoButton);
-      flowPanel.add (pasteMP3AudioButton);
+      //flowPanel.add (pasteMP4VideoButton);
+      //flowPanel.add (pasteMP3AudioButton);
       flowPanel.add (folderPathTextField);
 
       southPanel.add (flowPanel);
@@ -238,6 +238,7 @@ public class FFMpegFrontEnd extends JFrame
       thePanel.add (southPanel,                BorderLayout.SOUTH);
 
       scanForFilesButton.addActionListener (event -> buildMP4FilesList () );
+      generateMP4FFBatButton.addActionListener  (event -> generateMP4FFBat () );
 
       aboutButton.addActionListener             (event -> Moose_Utils.displayAboutDialog (FFMpegFrontEnd.this, APPLICATION_TITLE, APPLICATION_AUTHOR, ""));
       exitButton.addActionListener              (event -> exitApplication ());
@@ -437,8 +438,8 @@ public class FFMpegFrontEnd extends JFrame
       System.out.println ("-> " + filesArrayList.size() + " Non-FFMpeg'd MP4 files found (no corressponding '_ff.mp4').");
 
 
-      // (3).  Remove "_ff.MP4" files - these have already been processed.
-      //       Remove Zoom lecture recordings (they are already FFMpeg'd)
+      // (3).  Remove "_ff.MP4" files and their original ".mp4" file - these have already been processed.
+      // (4).  Remove Zoom lecture recordings (they are already FFMpeg'd)
       //       Remove Video Camera files.
       //       Remove common folder files.
       // Go in reverse to save an IF test.
@@ -448,7 +449,7 @@ public class FFMpegFrontEnd extends JFrame
          String fileExtensionStr = Moose_Utils.getFileExtensionFromStr (fileNameStr); // Returns "java"
 
          // File.getName():  File name (no path).
-         String fileNameNoPathStr  = filesArrayList.get(k).getName(); // File name (no path).
+         String fileNameNoPathStr  = filesArrayList.get(k).getName().trim(); // File name (no path).
 
          if ((fileNameStr.toLowerCase().endsWith ("_ff.mp4")                 == true) ||
              (fileNameStr.toLowerCase().contains ("00_common_files")         == true) ||
@@ -493,6 +494,37 @@ public class FFMpegFrontEnd extends JFrame
       }
       return totalFileSizeBytes;
    }
+
+   private void generateMP4FFBat ()
+   {
+      StringBuffer sb = new StringBuffer();
+
+      sb.append ("echo off" + "\n");
+      sb.append ("cls"      + "\n");
+
+      // ffmpeg.exe -i a.mp4 a_ff.mp4
+      for (int k = 0; k < filesArrayList.size(); k++)
+      {
+          sb.append ("echo Processing File " + (k+1) + " / " + filesArrayList.size() + ":" + "\n");
+
+          File destFile = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
+
+          sb.append ("ffmpeg.exe -i " +
+                     "\"" + filesArrayList.get(k).toString() + "\"" + "  " +
+                     "\"" + destFile.toString()              + "\"" + "\n" );
+      }
+
+      sb.append ("echo DONE !"      + "\n");
+      sb.append ("pause"            + "\n");
+
+      Moose_Utils.writeOrAppendStringToFile ("process_files.bat", sb.toString(), false);
+   }
+
+   private void generateMP4FilesThatCanBeDeletedBat ()
+   {
+   }
+
+
 /*
    private void downloadUsingBAT ()
    {
