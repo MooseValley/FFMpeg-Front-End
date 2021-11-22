@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.04";
+   private static final String APPLICATION_VERSION          = "v0.05";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -130,7 +130,8 @@ public class FFMpegFrontEnd extends JFrame
    //private JButton     pasteMP3AudioButton             = new JButton      ("Paste URLs MP3 Audio",     Icons.paste_clipboard_icon);
    private JButton     generateMP4FFBatButton               = new JButton      ("Generate MP4 FF BAT",           Icons.file_save_icon);
    private JButton     generateDeleteRedundantMp4BatButton  = new JButton      ("Generate Delete Redundant MP4 BAT",           Icons.file_save_icon);
-   //private JButton     deleteBATFileButton             = new JButton      ("Reset",    Icons.trash_garbage_icon);
+   private JButton     generateFFMp4FileSizeChangePercentButton  = new JButton      ("Generate File Change%",           Icons.file_save_icon);
+ //private JButton     deleteBATFileButton             = new JButton      ("Reset",    Icons.trash_garbage_icon);
    //private JButton     appendBATFileButton             = new JButton      ("Append to Download Commands", Icons.file_save_icon);
    private JButton     aboutButton                     = new JButton      ("Help",     Icons.help_icon);
    private JButton     exitButton                      = new JButton      ("Exit",     Icons.exit_icon);
@@ -208,7 +209,7 @@ public class FFMpegFrontEnd extends JFrame
 
       buttonPanel.add (generateMP4FFBatButton);
       buttonPanel.add (generateDeleteRedundantMp4BatButton);
-
+      buttonPanel.add (generateFFMp4FileSizeChangePercentButton);
       buttonPanel.add (new JLabel ("    ") );
 
       buttonPanel.add (scanForFilesButton);
@@ -240,9 +241,10 @@ public class FFMpegFrontEnd extends JFrame
 
       thePanel.add (southPanel,                BorderLayout.SOUTH);
 
-      scanForFilesButton.addActionListener                   (event -> buildMP4FilesList () );
-      generateMP4FFBatButton.addActionListener               (event -> generateMP4FFBat () );
-      generateDeleteRedundantMp4BatButton.addActionListener  (event -> generateDeleteRedundantMp4Bat () );
+      scanForFilesButton.addActionListener                       (event -> buildMP4FilesList () );
+      generateMP4FFBatButton.addActionListener                   (event -> generateMP4FFBat () );
+      generateDeleteRedundantMp4BatButton.addActionListener      (event -> generateDeleteRedundantMp4Bat () );
+      generateFFMp4FileSizeChangePercentButton.addActionListener (event -> generateFFMp4FileSizeChangePercent () );
 
       aboutButton.addActionListener             (event -> Moose_Utils.displayAboutDialog (FFMpegFrontEnd.this, APPLICATION_TITLE, APPLICATION_AUTHOR, ""));
       exitButton.addActionListener              (event -> exitApplication ());
@@ -515,7 +517,7 @@ public class FFMpegFrontEnd extends JFrame
       {
           sb.append ("echo Processing File " + (k+1) + " / " + filesArrayList.size() + ":" + "\n");
 
-          File destFile = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
+          File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
 
           sb.append ("ffmpeg.exe -i " +
                      "\"" + filesArrayList.get(k).toString() + "\"" + "  " +
@@ -537,12 +539,36 @@ public class FFMpegFrontEnd extends JFrame
 
       for (int k = 0; k < filesArrayList.size(); k++)
       {
-          File destFile = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
+          File sourceFile = filesArrayList.get(k);
+          File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
 
           if (Moose_Utils.fileExists (destFile)              == true)
           {
-             //  The "_ff.mp4" exists, so delete the original "mp4" file.
-             sb.append ("del " + "\"" + filesArrayList.get(k).toString() + "\"" + "\n" );
+             long sourceFileBytes = Moose_Utils.getFileSizeBytes (sourceFile);
+             long destFileBytes   = Moose_Utils.getFileSizeBytes (destFile);
+
+
+             // If destFile has been shrunk but not TOO much and is in acceptable limits:
+             // > 0.33 to get cater for errors, truncated files, etc
+             // < 0.80 to discard "_ff.mp4" files that were not shrunk enough.
+             if ((destFileBytes > (long) sourceFileBytes * 0.33) &&
+                 (destFileBytes < (long) sourceFileBytes * 0.80) &&
+                 (destFileBytes > 1000) )
+             {
+                //  The "_ff.mp4" exists, and is an acceptable size, so delete the original "mp4" file.
+                sb.append ("del " + "\"" + sourceFile.toString() + "\"" + "\n" );
+             }
+             else
+             {
+                // The dest file is shrunk too much or not enough to be worth keeping instead of the original
+                // so get rid of it.
+                sb.append ("del " + "\"" + destFile.toString() + "\"" + "\n" );
+
+                // TODO: rename the original file to "_orig_ff.mp4" so that we don't re-process this file again in the future.
+                //
+                File newSourceFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_orig_ff");
+                Moose_Utils.renameFile (sourceFile, newSourceFile);
+             }
           }
       }
 
@@ -550,6 +576,29 @@ public class FFMpegFrontEnd extends JFrame
       sb.append ("pause"            + "\n");
 
       Moose_Utils.writeOrAppendStringToFile ("delete_redundant_files.bat", sb.toString(), false);
+   }
+
+   private void generateFFMp4FileSizeChangePercent ()
+   {
+      resultsTextArea.setText("");
+
+      for (int k = 0; k < filesArrayList.size(); k++)
+      {
+          File sourceFile = filesArrayList.get(k);
+          File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
+
+          if (Moose_Utils.fileExists (destFile)              == true)
+          {
+             long sourceFileBytes = Moose_Utils.getFileSizeBytes (sourceFile);
+             long destFileBytes   = Moose_Utils.getFileSizeBytes (destFile);
+             // new=55 old=60
+             // fileChangePct = 100.0 * (55 - 60) / 60 = -8.3%
+             double fileChangePct = 100.0 * (destFileBytes - sourceFileBytes)  / sourceFileBytes;
+
+             resultsTextArea.append (sourceFile.toString()  + "\n");
+             resultsTextArea.append (" -> File " + (k+1) + " change: " + String.format ("%.1f", fileChangePct) + "%" + "\n");
+          }
+      }
    }
 
 
