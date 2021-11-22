@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.05";
+   private static final String APPLICATION_VERSION          = "v0.06";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -549,10 +549,10 @@ public class FFMpegFrontEnd extends JFrame
 
 
              // If destFile has been shrunk but not TOO much and is in acceptable limits:
-             // > 0.33 to get cater for errors, truncated files, etc
-             // < 0.80 to discard "_ff.mp4" files that were not shrunk enough.
-             if ((destFileBytes > (long) sourceFileBytes * 0.33) &&
-                 (destFileBytes < (long) sourceFileBytes * 0.80) &&
+             // > 0.20 to get cater for errors, truncated files, etc
+             // < 0.90 to discard "_ff.mp4" files that were not shrunk enough.
+             if ((destFileBytes > (long) sourceFileBytes * 0.20) &&
+                 (destFileBytes < (long) sourceFileBytes * 0.90) &&
                  (destFileBytes > 1000) )
              {
                 //  The "_ff.mp4" exists, and is an acceptable size, so delete the original "mp4" file.
@@ -582,6 +582,8 @@ public class FFMpegFrontEnd extends JFrame
    {
       resultsTextArea.setText("");
 
+      long totalBytesReduction = 0;
+
       for (int k = 0; k < filesArrayList.size(); k++)
       {
           File sourceFile = filesArrayList.get(k);
@@ -591,6 +593,14 @@ public class FFMpegFrontEnd extends JFrame
           {
              long sourceFileBytes = Moose_Utils.getFileSizeBytes (sourceFile);
              long destFileBytes   = Moose_Utils.getFileSizeBytes (destFile);
+
+             if ((destFileBytes > (long) sourceFileBytes * 0.20) &&
+                 (destFileBytes < (long) sourceFileBytes * 0.90) &&
+                 (destFileBytes > 1000) )
+             {
+               totalBytesReduction += sourceFileBytes - destFileBytes;
+             }
+
              // new=55 old=60
              // fileChangePct = 100.0 * (55 - 60) / 60 = -8.3%
              double fileChangePct = 100.0 * (destFileBytes - sourceFileBytes)  / sourceFileBytes;
@@ -599,6 +609,14 @@ public class FFMpegFrontEnd extends JFrame
              resultsTextArea.append (" -> File " + (k+1) + " change: " + String.format ("%.1f", fileChangePct) + "%" + "\n");
           }
       }
+
+      System.out.println ();
+      System.out.println ("Total disk space saved: " +  Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalBytesReduction, 1) );
+
+      resultsTextArea.append ("" + "\n");
+      resultsTextArea.append ("Total disk space saved: " + Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalBytesReduction, 1) + "\n");
+
+      Moose_Utils.writeOrAppendStringToFile ("file_change_pct_and_disk_space_reduction.txt", resultsTextArea.getText(), true);
    }
 
 
