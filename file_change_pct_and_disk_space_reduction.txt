@@ -66,3 +66,5 @@ c:\Camtasia\Data Analysis - Postcode - Entity OR Attribute\Data Analysis 101 - P
  -> File 33 change: -38.6%
 
 Total disk space saved: 846.6 MB
+
+Total disk space saved: 0.0 bytes
