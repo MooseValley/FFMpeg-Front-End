@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.07";
+   private static final String APPLICATION_VERSION          = "v0.08";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -531,11 +531,14 @@ public class FFMpegFrontEnd extends JFrame
           File sourceFile = filesArrayList.get(k);
           File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (sourceFile, "_ff");
 
-          sb.append ("ffmpeg.exe -i " +
-                     "\"" + sourceFile.toString() + "\"" + "  " +
-                     "\"" + destFile.toString()   + "\"" + "\n" );
+          if (Moose_Utils.fileExists (destFile)              == false)
+          {
+             sb.append ("ffmpeg.exe -i " +
+                        "\"" + sourceFile.toString() + "\"" + "  " +
+                        "\"" + destFile.toString()   + "\"" + "\n" );
 
-          resultsTextArea.append (sourceFile.getName()  + "\n");
+             resultsTextArea.append (sourceFile.getName()  + "\n");
+          }
       }
 
       sb.append ("echo DONE !"      + "\n");
