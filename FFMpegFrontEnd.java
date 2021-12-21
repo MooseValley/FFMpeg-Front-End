@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.06";
+   private static final String APPLICATION_VERSION          = "v0.07";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -507,7 +507,18 @@ public class FFMpegFrontEnd extends JFrame
 
    private void generateMP4FFBat ()
    {
+      if ((filesArrayList == null) || (filesArrayList.size() == 0) )
+      {
+         JOptionPane.showMessageDialog
+            (FFMpegFrontEnd.this, "ERROR: no files found.",
+            "Error",  JOptionPane.ERROR_MESSAGE);
+
+         return;
+      }
+
       StringBuffer sb = new StringBuffer();
+
+      resultsTextArea.setText("");
 
       sb.append ("echo off" + "\n");
       sb.append ("cls"      + "\n");
@@ -517,11 +528,14 @@ public class FFMpegFrontEnd extends JFrame
       {
           sb.append ("echo Processing File " + (k+1) + " / " + filesArrayList.size() + ":" + "\n");
 
-          File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
+          File sourceFile = filesArrayList.get(k);
+          File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (sourceFile, "_ff");
 
           sb.append ("ffmpeg.exe -i " +
-                     "\"" + filesArrayList.get(k).toString() + "\"" + "  " +
-                     "\"" + destFile.toString()              + "\"" + "\n" );
+                     "\"" + sourceFile.toString() + "\"" + "  " +
+                     "\"" + destFile.toString()   + "\"" + "\n" );
+
+          resultsTextArea.append (sourceFile.getName()  + "\n");
       }
 
       sb.append ("echo DONE !"      + "\n");
@@ -532,6 +546,15 @@ public class FFMpegFrontEnd extends JFrame
 
    private void generateDeleteRedundantMp4Bat ()
    {
+      if ((filesArrayList == null) || (filesArrayList.size() == 0) )
+      {
+         JOptionPane.showMessageDialog
+            (FFMpegFrontEnd.this, "ERROR: no files found.",
+            "Error",  JOptionPane.ERROR_MESSAGE);
+
+         return;
+      }
+
       StringBuffer sb = new StringBuffer();
 
       sb.append ("echo off" + "\n");
@@ -580,6 +603,15 @@ public class FFMpegFrontEnd extends JFrame
 
    private void generateFFMp4FileSizeChangePercent ()
    {
+      if ((filesArrayList == null) || (filesArrayList.size() == 0) )
+      {
+         JOptionPane.showMessageDialog
+            (FFMpegFrontEnd.this, "ERROR: no files found.",
+            "Error",  JOptionPane.ERROR_MESSAGE);
+
+         return;
+      }
+
       resultsTextArea.setText("");
 
       long totalBytesReduction = 0;
