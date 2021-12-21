@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.08";
+   private static final String APPLICATION_VERSION          = "v0.09";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -489,6 +489,8 @@ public class FFMpegFrontEnd extends JFrame
 
       System.out.println ();
       System.out.println ("Total size: " + Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalFileSizeBytes, 1) );
+
+      resultsTextArea.append ("-> " + filesArrayList.size() + " MP4 files listed." + "\n");
    }
 
    private long getSizeOfAllFilesInArrayList (ArrayList<File> filesArrayList)
@@ -560,6 +562,10 @@ public class FFMpegFrontEnd extends JFrame
 
       sb.append ("echo DONE !"      + "\n");
       sb.append ("pause"            + "\n");
+
+      resultsTextArea.append ("-> " + totalFiles + " MP4 files to be processed in '" +
+                              "process_files.bat" + "'." + "\n");
+
 
       Moose_Utils.writeOrAppendStringToFile ("process_files.bat", sb.toString(), false);
    }
