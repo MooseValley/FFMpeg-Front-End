@@ -517,6 +517,8 @@ public class FFMpegFrontEnd extends JFrame
       }
 
       StringBuffer sb = new StringBuffer();
+      int fileCount  = 0;
+      int totalFiles = 0;
 
       resultsTextArea.setText("");
 
@@ -526,13 +528,28 @@ public class FFMpegFrontEnd extends JFrame
       // ffmpeg.exe -i a.mp4 a_ff.mp4
       for (int k = 0; k < filesArrayList.size(); k++)
       {
-          sb.append ("echo Processing File " + (k+1) + " / " + filesArrayList.size() + ":" + "\n");
-
           File sourceFile = filesArrayList.get(k);
           File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (sourceFile, "_ff");
 
           if (Moose_Utils.fileExists (destFile)              == false)
           {
+             totalFiles++;
+          }
+      }
+
+
+      // ffmpeg.exe -i a.mp4 a_ff.mp4
+      for (int k = 0; k < filesArrayList.size(); k++)
+      {
+          File sourceFile = filesArrayList.get(k);
+          File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (sourceFile, "_ff");
+
+          if (Moose_Utils.fileExists (destFile)              == false)
+          {
+             fileCount++;
+
+             sb.append ("echo Processing File " + fileCount + " / " + totalFiles + ":" + "\n");
+
              sb.append ("ffmpeg.exe -i " +
                         "\"" + sourceFile.toString() + "\"" + "  " +
                         "\"" + destFile.toString()   + "\"" + "\n" );
