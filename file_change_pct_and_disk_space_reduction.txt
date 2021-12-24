@@ -374,3 +374,623 @@ Total disk space saved: 566.9 MB
 Total disk space saved: 0.0 bytes
 
 Total disk space saved: 0.0 bytes
+
+Total disk space saved: 0.0 bytes
+c:\Camtasia\Java Dev\Java - Decompile (JD-GUI) and Obfuscate (Proguard) Explore\Java - Decompile and Proguard Explore - v1.01 - no sound on end screen.mp4
+ -> File 1 change: -37.4%
+c:\Camtasia\Java Dev\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 03 - Netbeans\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 03 - Netbeans.mp4
+ -> File 2 change: -36.6%
+c:\Camtasia\Java Dev\Java - Polymorphism with a Car Park Example\Java - Polymorphism with a Car Park Example.mp4
+ -> File 3 change: -24.6%
+c:\Camtasia\JavaScript - Snake - Make Your Own SNAKE Game - Part 02\JavaScript - Snake - Make Your Own SNAKE Game - Part 02.mp4
+ -> File 4 change: -36.9%
+c:\Camtasia\Kinka Palms - BAD Guests\2020-09-26 - Daniel Meaden and Saraya Stewart (Unit 4)\2020-09-26 - Daniel Meaden and Saraya Stewart (Unit 4) - All Material.mp4
+ -> File 5 change: -33.9%
+c:\Camtasia\LBRY\LBRY - 02 - How to Promote your Content\LBRY - 02 - How to Promote your Content.mp4
+ -> File 6 change: -24.3%
+c:\Camtasia\LBRY\LBRY - 04 - 8+ Years on YouTube VS 1 month on LBRY\LBRY - 04 - 8 Years on YouTube VS 1 month on LBRY.mp4
+ -> File 7 change: -13.6%
+c:\Camtasia\LBRY\LBRY - 06 - Treasure Hunt - v0.001\LBRY - 06 - Treasure Hunt - v0.001.mp4
+ -> File 8 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 08 - YouTube Farewell\YouTube Farewell - v1.00.mp4
+ -> File 9 change: -41.1%
+c:\Camtasia\LBRY\LBRY - 09 - Treasure Hunt 2020 - Call For Clues\LBRY - 09 - Treasure Hunt 2020 - Call For Clues.mp4
+ -> File 10 change: -28.0%
+c:\Camtasia\LBRY\LBRY - 12 - What NOT to do on LBRY\LBRY - 12 - What NOT to do on LBRY.mp4
+ -> File 11 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 14 - YouTube VS LBRY - Fully explained in 60 seconds\LBRY - 14 - YouTube VS LBRY - Fully explained in 60 seconds.mp4
+ -> File 12 change: -43.9%
+c:\Camtasia\LBRY\LBRY - 15 - YouTube's Attack on Creators - Who is Really Behind the Demonitisations, Deletions, etc\Old\LBRY - 15 - YouTube - Who is Really Behind the Demonitisations, Deletions, etc.mp4
+ -> File 13 change: -46.5%
+c:\Camtasia\LBRY\LBRY - 17 - The One Thing that would launch LBRY into the Stratosphere\LBRY - 17 - The One Thing that would launch LBRY into the Stratosphere.mp4
+ -> File 14 change: -30.7%
+c:\Camtasia\LBRY\LBRY - 19 - 1 MILLION LBC Supports - SHOCKING !!!\LBRY - 19 - 1 MILLION LBC Supports - SHOCKING !!!.mp4
+ -> File 15 change: -27.8%
+c:\Camtasia\LBRY\LBRY - 21 - 3 Months on LBRY - What are the MOST IMPORTANT Things I have learned\LBRY - 21 - 3 Months on LBRY - What are the MOST IMPORTANT Things I have learned.mp4
+ -> File 16 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 22 - LBRY got hacked - 48 hours to save it - MooseValley's Response\LBRY got hacked - Last 48 hours to save it - Mantega - 154356990_LBRY.mp4
+ -> File 17 change: -6.6%
+c:\Camtasia\LBRY\LBRY - 24 - Creator Rewards 2.0 - Requirements - The Fine Print\LBRY - 24 - Creator Rewards 2.0 - Requirements - The Fine Print.mp4
+ -> File 18 change: -34.8%
+c:\Camtasia\LBRY\LBRY - 26 - Join the LBRY community on Reddit - r, LBRY, and r,LBRYlnks reaches 50 members\LBRY - 26 - Join the LBRY community on Reddit - r, LBRY, and r,LBRYlnks reaches 50 members ... Woo Hoo !!.mp4
+ -> File 19 change: -39.2%
+c:\Camtasia\LBRY\LBRY - 27 - Unlock All of Your Tips with One Easy Command\LBRY - 27 - Unlock All of Your Tips with One Easy Command.mp4
+ -> File 20 change: -20.6%
+c:\Camtasia\LBRY\LBRY - 29 - View Master L6 Master Explorer (2,500 views, 10.5 months)\LBRY - 29 - View Master L6 Master Explorer (2,500 views, 10.5 months).mp4
+ -> File 21 change: -61.7%
+c:\Camtasia\LBRY\LBRY - 31 - Stalker Follow up - A Special message to the Stalker, Sabotager\LBRY - 31 - Stalker Follow up - A Special message to the Stalker, Sabotager - v1.1 - nicer version.mp4
+ -> File 22 change: -62.4%
+
+Total disk space saved: 402.2 MB
+c:\Camtasia\Java Dev\Java - Decompile (JD-GUI) and Obfuscate (Proguard) Explore\Java - Decompile and Proguard Explore - v1.01 - no sound on end screen.mp4
+ -> File 1 change: -37.4%
+c:\Camtasia\Java Dev\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 03 - Netbeans\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 03 - Netbeans.mp4
+ -> File 2 change: -36.6%
+c:\Camtasia\Java Dev\Java - Polymorphism with a Car Park Example\Java - Polymorphism with a Car Park Example.mp4
+ -> File 3 change: -24.6%
+c:\Camtasia\JavaScript - Snake - Make Your Own SNAKE Game - Part 02\JavaScript - Snake - Make Your Own SNAKE Game - Part 02.mp4
+ -> File 4 change: -36.9%
+c:\Camtasia\Kinka Palms - BAD Guests\2020-09-26 - Daniel Meaden and Saraya Stewart (Unit 4)\2020-09-26 - Daniel Meaden and Saraya Stewart (Unit 4) - All Material.mp4
+ -> File 5 change: -33.9%
+c:\Camtasia\LBRY\LBRY - 02 - How to Promote your Content\LBRY - 02 - How to Promote your Content.mp4
+ -> File 6 change: -24.3%
+c:\Camtasia\LBRY\LBRY - 04 - 8+ Years on YouTube VS 1 month on LBRY\LBRY - 04 - 8 Years on YouTube VS 1 month on LBRY.mp4
+ -> File 7 change: -13.6%
+c:\Camtasia\LBRY\LBRY - 06 - Treasure Hunt - v0.001\LBRY - 06 - Treasure Hunt - v0.001.mp4
+ -> File 8 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 08 - YouTube Farewell\YouTube Farewell - v1.00.mp4
+ -> File 9 change: -41.1%
+c:\Camtasia\LBRY\LBRY - 09 - Treasure Hunt 2020 - Call For Clues\LBRY - 09 - Treasure Hunt 2020 - Call For Clues.mp4
+ -> File 10 change: -28.0%
+c:\Camtasia\LBRY\LBRY - 12 - What NOT to do on LBRY\LBRY - 12 - What NOT to do on LBRY.mp4
+ -> File 11 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 14 - YouTube VS LBRY - Fully explained in 60 seconds\LBRY - 14 - YouTube VS LBRY - Fully explained in 60 seconds.mp4
+ -> File 12 change: -43.9%
+c:\Camtasia\LBRY\LBRY - 15 - YouTube's Attack on Creators - Who is Really Behind the Demonitisations, Deletions, etc\Old\LBRY - 15 - YouTube - Who is Really Behind the Demonitisations, Deletions, etc.mp4
+ -> File 13 change: -46.5%
+c:\Camtasia\LBRY\LBRY - 17 - The One Thing that would launch LBRY into the Stratosphere\LBRY - 17 - The One Thing that would launch LBRY into the Stratosphere.mp4
+ -> File 14 change: -30.7%
+c:\Camtasia\LBRY\LBRY - 19 - 1 MILLION LBC Supports - SHOCKING !!!\LBRY - 19 - 1 MILLION LBC Supports - SHOCKING !!!.mp4
+ -> File 15 change: -27.8%
+c:\Camtasia\LBRY\LBRY - 21 - 3 Months on LBRY - What are the MOST IMPORTANT Things I have learned\LBRY - 21 - 3 Months on LBRY - What are the MOST IMPORTANT Things I have learned.mp4
+ -> File 16 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 22 - LBRY got hacked - 48 hours to save it - MooseValley's Response\LBRY got hacked - Last 48 hours to save it - Mantega - 154356990_LBRY.mp4
+ -> File 17 change: -6.6%
+c:\Camtasia\LBRY\LBRY - 24 - Creator Rewards 2.0 - Requirements - The Fine Print\LBRY - 24 - Creator Rewards 2.0 - Requirements - The Fine Print.mp4
+ -> File 18 change: -34.8%
+c:\Camtasia\LBRY\LBRY - 26 - Join the LBRY community on Reddit - r, LBRY, and r,LBRYlnks reaches 50 members\LBRY - 26 - Join the LBRY community on Reddit - r, LBRY, and r,LBRYlnks reaches 50 members ... Woo Hoo !!.mp4
+ -> File 19 change: -39.2%
+c:\Camtasia\LBRY\LBRY - 27 - Unlock All of Your Tips with One Easy Command\LBRY - 27 - Unlock All of Your Tips with One Easy Command.mp4
+ -> File 20 change: -20.6%
+c:\Camtasia\LBRY\LBRY - 29 - View Master L6 Master Explorer (2,500 views, 10.5 months)\LBRY - 29 - View Master L6 Master Explorer (2,500 views, 10.5 months).mp4
+ -> File 21 change: -61.7%
+c:\Camtasia\LBRY\LBRY - 31 - Stalker Follow up - A Special message to the Stalker, Sabotager\LBRY - 31 - Stalker Follow up - A Special message to the Stalker, Sabotager - v1.1 - nicer version.mp4
+ -> File 22 change: -62.4%
+
+Total disk space saved: 402.2 MB
+c:\Camtasia\Java Dev\Java - Decompile (JD-GUI) and Obfuscate (Proguard) Explore\Java - Decompile and Proguard Explore - v1.01 - no sound on end screen.mp4
+ -> File 1 change: -37.4%
+c:\Camtasia\Java Dev\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 03 - Netbeans\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 03 - Netbeans.mp4
+ -> File 2 change: -36.6%
+c:\Camtasia\Java Dev\Java - Polymorphism with a Car Park Example\Java - Polymorphism with a Car Park Example.mp4
+ -> File 3 change: -24.6%
+c:\Camtasia\JavaScript - Snake - Make Your Own SNAKE Game - Part 02\JavaScript - Snake - Make Your Own SNAKE Game - Part 02.mp4
+ -> File 4 change: -36.9%
+c:\Camtasia\Kinka Palms - BAD Guests\2020-09-26 - Daniel Meaden and Saraya Stewart (Unit 4)\2020-09-26 - Daniel Meaden and Saraya Stewart (Unit 4) - All Material.mp4
+ -> File 5 change: -33.9%
+c:\Camtasia\LBRY\LBRY - 02 - How to Promote your Content\LBRY - 02 - How to Promote your Content.mp4
+ -> File 6 change: -24.3%
+c:\Camtasia\LBRY\LBRY - 04 - 8+ Years on YouTube VS 1 month on LBRY\LBRY - 04 - 8 Years on YouTube VS 1 month on LBRY.mp4
+ -> File 7 change: -13.6%
+c:\Camtasia\LBRY\LBRY - 06 - Treasure Hunt - v0.001\LBRY - 06 - Treasure Hunt - v0.001.mp4
+ -> File 8 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 08 - YouTube Farewell\YouTube Farewell - v1.00.mp4
+ -> File 9 change: -41.1%
+c:\Camtasia\LBRY\LBRY - 09 - Treasure Hunt 2020 - Call For Clues\LBRY - 09 - Treasure Hunt 2020 - Call For Clues.mp4
+ -> File 10 change: -28.0%
+c:\Camtasia\LBRY\LBRY - 12 - What NOT to do on LBRY\LBRY - 12 - What NOT to do on LBRY.mp4
+ -> File 11 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 14 - YouTube VS LBRY - Fully explained in 60 seconds\LBRY - 14 - YouTube VS LBRY - Fully explained in 60 seconds.mp4
+ -> File 12 change: -43.9%
+c:\Camtasia\LBRY\LBRY - 15 - YouTube's Attack on Creators - Who is Really Behind the Demonitisations, Deletions, etc\Old\LBRY - 15 - YouTube - Who is Really Behind the Demonitisations, Deletions, etc.mp4
+ -> File 13 change: -46.5%
+c:\Camtasia\LBRY\LBRY - 17 - The One Thing that would launch LBRY into the Stratosphere\LBRY - 17 - The One Thing that would launch LBRY into the Stratosphere.mp4
+ -> File 14 change: -30.7%
+c:\Camtasia\LBRY\LBRY - 19 - 1 MILLION LBC Supports - SHOCKING !!!\LBRY - 19 - 1 MILLION LBC Supports - SHOCKING !!!.mp4
+ -> File 15 change: -27.8%
+c:\Camtasia\LBRY\LBRY - 21 - 3 Months on LBRY - What are the MOST IMPORTANT Things I have learned\LBRY - 21 - 3 Months on LBRY - What are the MOST IMPORTANT Things I have learned.mp4
+ -> File 16 change: -46.8%
+c:\Camtasia\LBRY\LBRY - 22 - LBRY got hacked - 48 hours to save it - MooseValley's Response\LBRY got hacked - Last 48 hours to save it - Mantega - 154356990_LBRY.mp4
+ -> File 17 change: -6.6%
+c:\Camtasia\LBRY\LBRY - 24 - Creator Rewards 2.0 - Requirements - The Fine Print\LBRY - 24 - Creator Rewards 2.0 - Requirements - The Fine Print.mp4
+ -> File 18 change: -34.8%
+c:\Camtasia\LBRY\LBRY - 26 - Join the LBRY community on Reddit - r, LBRY, and r,LBRYlnks reaches 50 members\LBRY - 26 - Join the LBRY community on Reddit - r, LBRY, and r,LBRYlnks reaches 50 members ... Woo Hoo !!.mp4
+ -> File 19 change: -39.2%
+c:\Camtasia\LBRY\LBRY - 27 - Unlock All of Your Tips with One Easy Command\LBRY - 27 - Unlock All of Your Tips with One Easy Command.mp4
+ -> File 20 change: -20.6%
+c:\Camtasia\LBRY\LBRY - 29 - View Master L6 Master Explorer (2,500 views, 10.5 months)\LBRY - 29 - View Master L6 Master Explorer (2,500 views, 10.5 months).mp4
+ -> File 21 change: -61.7%
+c:\Camtasia\LBRY\LBRY - 31 - Stalker Follow up - A Special message to the Stalker, Sabotager\LBRY - 31 - Stalker Follow up - A Special message to the Stalker, Sabotager - v1.1 - nicer version.mp4
+ -> File 22 change: -62.4%
+
+Total disk space saved: 402.2 MB
+
+Total disk space saved: 0.0 bytes
+
+Total disk space saved: 0.0 bytes
+c:\Camtasia\Lotus Improv - Live Demonstration and Discussion - The Greatest Software of ALL Time\Lotus Improv - Live Demo.mp4
+ -> File 1 change: -33.1%
+c:\Camtasia\Lotus Improv Guided Tour - included with Improv in 1993\Lotus Improv Guided Tour - included with Improv in 1993.mp4
+ -> File 2 change: -66.4%
+c:\Camtasia\MEMES, YouTube People, etc\Oblivion - 01 - We've got them, Hello Boys.mp4
+ -> File 3 change: -48.0%
+c:\Camtasia\Mighty Boosh\Mighty Boosh - I Love the Chosen One.mp4
+ -> File 4 change: -46.0%
+c:\Camtasia\Mighty Boosh - Old Greg clip - The Importance of Telling a Story\Mighty Boosh - Old Greg clip - The Importance of Telling a Story.mp4
+ -> File 5 change: -47.5%
+c:\Camtasia\Mighty Boosh - Old Greg clip - The Importance of Telling a Story\The Mighty Boosh [2003-2007] - S02,E05 - The Legend of Old Gregg.mp4
+ -> File 6 change: -35.3%
+c:\Camtasia\Moose's Soap Box - Junk Mail Catalogs\WIN_20191016_12_46_52_Pro.mp4
+ -> File 7 change: -1.1%
+c:\Camtasia\Moose's Soap Box - Nuclear Power\Moose's Soap Box - Nuclear Power.mp4
+ -> File 8 change: -40.2%
+c:\Camtasia\Moose's Software - Big Mouse Pointer\Big Mouse Pointer.mp4
+ -> File 9 change: -36.1%
+c:\Camtasia\Moose's Software - Mosaics - How to Create Mosacis of Images (Windows)\Mosaics - How to Create Mosacis of Images (Windows).mp4
+ -> File 10 change: -41.1%
+c:\Camtasia\Moose's Software - Nixie Clock - v1.3\Nixie Clock - v1.3.mp4
+ -> File 11 change: -38.2%
+c:\Camtasia\Moose's Software - SETI WOW Signal - Recreating a SETI WOW Data File\SETI WOW Signal - Recreating a SETI WOW Data File.mp4
+ -> File 12 change: -20.2%
+c:\Camtasia\Moose's Software - Sound Board - Lenny\Sound Board - Lenny.mp4
+ -> File 13 change: -32.5%
+c:\Camtasia\Moose's Software - Sound Effects Sound Board\Sound Effects Sound Board.mp4
+ -> File 14 change: -28.7%
+c:\Camtasia\Pool Leak Saga - Episode 01 - 31-May\Pool Leak Saga - 01.mp4
+ -> File 15 change: -44.0%
+c:\Camtasia\Pool Leak Saga - Episode 02 - 06-Jun\Pool Leak Saga - 02.mp4
+ -> File 16 change: -49.7%
+c:\Camtasia\Pool Leak Saga - Episode 03 - 20-Jun\Pool Leak Saga - 03.mp4
+ -> File 17 change: -54.9%
+c:\Camtasia\Predator The Musical (Arnold Schwarzenegger) - Fixed Audio\Predator The Musical (Arnold Schwarzenegger) - broken audio.mp4
+ -> File 18 change: -4.3%
+c:\Camtasia\Predator The Musical (Arnold Schwarzenegger) - Fixed Audio\Predator The Musical (Arnold Schwarzenegger) - Fixed Audio.mp4
+ -> File 19 change: -45.8%
+c:\Camtasia\Predator-Prey - Bears and Fish - Part 2\Predator-Prey - Bears and Fish - Part 2.mp4
+ -> File 20 change: -29.5%
+c:\Camtasia\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 01\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 01.mp4
+ -> File 21 change: -30.1%
+c:\Camtasia\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 02\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 02.mp4
+ -> File 22 change: -30.4%
+c:\Camtasia\Programming - I HATE Programming\Programming - I HATE Programming.mp4
+ -> File 23 change: -41.2%
+c:\Camtasia\PSA - Fire Hazard - Detail Doctor Instant Restorer - WARNING\PSA - Fire Hazard - Detail Doctor Instant Restorer - WARNING.mp4
+ -> File 24 change: -20.9%
+c:\Camtasia\PSA - Putting Fireworks in Your Back Passage May NOT be a Good idea\PSA - Putting Fireworks in Your Back Passage May NOT be a Good idea.mp4
+ -> File 25 change: -36.7%
+c:\Camtasia\Quad Bike Kinka Trails - 2019-12-04\2019-12-04 - Quad Bike Trails.mp4
+ -> File 26 change: -62.0%
+c:\Camtasia\Quad Bike Thunderstorm Breakdown - Episode 02 - Start-up, Check\Quad Bike Thunderstorm Breakdown - Episode 02 - Start-up, Check.mp4
+ -> File 27 change: -53.0%
+c:\Camtasia\SciFi - Loneliness and Mental Health - Star Trek, Space 1999\SciFi - Loneliness and Mental Health - video - v0.1 - checkout copyright implications.mp4
+ -> File 28 change: -36.8%
+c:\Camtasia\SciFi - Loneliness and Mental Health - Star Trek, Space 1999\SciFi - Loneliness and Mental Health - video - v0.2 - drastically reduce clip lengths.mp4
+ -> File 29 change: -42.3%
+c:\Camtasia\SciFi - Space 1999 - Farewell Moonbase Alpha\SciFi - Space 1999 - Farewell Moonbase Alpha - v0.1.mp4
+ -> File 30 change: -49.7%
+c:\Camtasia\SciFi - Space 1999 - Farewell Moonbase Alpha\SciFi - Space 1999 - Farewell Moonbase Alpha - v0.2 - I read Prof Bergman's speech to avoid Copyright Bullshit.mp4
+ -> File 31 change: -50.2%
+c:\Camtasia\SciFi - Space 1999 VS The Singularity\SciFi - Space 1999 VS The Singularity (The Infernal Machine) - v0.4 - add time of the key Bergman Speech clip.mp4
+ -> File 32 change: -41.9%
+c:\Camtasia\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker)\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker) - v0.1.mp4
+ -> File 33 change: -43.3%
+c:\Camtasia\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker)\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker) - v0.2.mp4
+ -> File 34 change: -42.3%
+c:\Camtasia\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker)\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker) - v0.3.mp4
+ -> File 35 change: -43.2%
+c:\Camtasia\SciFi FAQ - Star Trek - Can Cats Open Sensor Doors\SciFi FAQ - Star Trek - Can Cats Open Sensor Doors   What does Spock think about Cats -We2lNufzYkQ.mp4
+ -> File 36 change: -21.6%
+c:\Camtasia\SciFi FAQ - Star Trek - Can Vulcans Sing\SciFi FAQ - Star Trek - Can Vulcans Sing - v1.0 - got Copyright Claim.mp4
+ -> File 37 change: -43.6%
+c:\Camtasia\SciFi FAQ - Star Trek - Can Vulcans Sing\SciFi FAQ - Star Trek - Can Vulcans Sing - v1.1 - short Bilbo Baggins.mp4
+ -> File 38 change: -45.5%
+c:\Camtasia\SciFi FAQ - Star Trek - How to SLAP a Vulcan\SciFi FAQ - Star Trek - How to SLAP a Vulcan - v0.2.mp4
+ -> File 39 change: -49.1%
+c:\Camtasia\Stocks - WallStreetBets - Ape Can Feel It\Stocks - WallStreetBets - Ape Can Feel It.mp4
+ -> File 40 change: -44.5%
+c:\Camtasia\Storms, Floods - 2021-03-22 - Friends Are Entering the DANGER ZONE\Storms, Floods - 2021-03-22 - Friends Are Entering the DANGER ZONE - v0.2 - add Aus map.mp4
+ -> File 41 change: -2.4%
+c:\Camtasia\TextPad - Getting the Most out of TextPad\TextPad - Getting the Most out of TextPad.mp4
+ -> File 42 change: -33.6%
+c:\Camtasia\Tractor - Mad Max Tractor\Mad Max Tractor.mp4
+ -> File 43 change: -61.2%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute (screen shot version).mp4
+ -> File 44 change: 7.9%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute (video version).mp4
+ -> File 45 change: 16.3%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute - v1.0.mp4
+ -> File 46 change: -34.9%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute - v1.1 - screen shot version.mp4
+ -> File 47 change: -42.6%
+c:\Camtasia\University - PhD, Masters - My Experience and FAILING to Complete a PhD (and Masters)\PhD, Masters - My Experience and FAILING to Complete a PhD (and Masters).mp4
+ -> File 48 change: -35.6%
+c:\Camtasia\University - Phd, Masters - Should I get a PhD and,or Masters\Phd, Masters - Should I get a PhD and,or Masters.mp4
+ -> File 49 change: -25.0%
+
+Total disk space saved: 2.2 GB
+c:\Camtasia\Lotus Improv Guided Tour - included with Improv in 1993\Lotus Improv Guided Tour - included with Improv in 1993.mp4
+ -> File 1 change: -66.4%
+c:\Camtasia\Mighty Boosh\Mighty Boosh - I Love the Chosen One.mp4
+ -> File 2 change: -46.0%
+c:\Camtasia\Mighty Boosh - Old Greg clip - The Importance of Telling a Story\The Mighty Boosh [2003-2007] - S02,E05 - The Legend of Old Gregg.mp4
+ -> File 3 change: -35.3%
+c:\Camtasia\Moose's Soap Box - Nuclear Power\Moose's Soap Box - Nuclear Power.mp4
+ -> File 4 change: -40.2%
+c:\Camtasia\Moose's Software - Mosaics - How to Create Mosacis of Images (Windows)\Mosaics - How to Create Mosacis of Images (Windows).mp4
+ -> File 5 change: -41.1%
+c:\Camtasia\Moose's Software - Sound Board - Lenny\Sound Board - Lenny.mp4
+ -> File 6 change: -32.5%
+c:\Camtasia\Pool Leak Saga - Episode 02 - 06-Jun\Pool Leak Saga - 02.mp4
+ -> File 7 change: -49.7%
+c:\Camtasia\Predator The Musical (Arnold Schwarzenegger) - Fixed Audio\Predator The Musical (Arnold Schwarzenegger) - broken audio.mp4
+ -> File 8 change: -4.3%
+c:\Camtasia\Predator-Prey - Bears and Fish - Part 2\Predator-Prey - Bears and Fish - Part 2.mp4
+ -> File 9 change: -29.5%
+c:\Camtasia\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 02\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 02.mp4
+ -> File 10 change: -30.4%
+c:\Camtasia\PSA - Putting Fireworks in Your Back Passage May NOT be a Good idea\PSA - Putting Fireworks in Your Back Passage May NOT be a Good idea.mp4
+ -> File 11 change: -36.7%
+c:\Camtasia\SciFi - Loneliness and Mental Health - Star Trek, Space 1999\SciFi - Loneliness and Mental Health - video - v0.2 - drastically reduce clip lengths.mp4
+ -> File 12 change: -42.3%
+c:\Camtasia\SciFi - Space 1999 - Farewell Moonbase Alpha\SciFi - Space 1999 - Farewell Moonbase Alpha - v0.2 - I read Prof Bergman's speech to avoid Copyright Bullshit.mp4
+ -> File 13 change: -50.2%
+c:\Camtasia\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker)\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker) - v0.1.mp4
+ -> File 14 change: -43.3%
+c:\Camtasia\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker)\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker) - v0.3.mp4
+ -> File 15 change: -43.2%
+c:\Camtasia\SciFi FAQ - Star Trek - Can Vulcans Sing\SciFi FAQ - Star Trek - Can Vulcans Sing - v1.0 - got Copyright Claim.mp4
+ -> File 16 change: -43.6%
+c:\Camtasia\SciFi FAQ - Star Trek - How to SLAP a Vulcan\SciFi FAQ - Star Trek - How to SLAP a Vulcan - v0.2.mp4
+ -> File 17 change: -49.1%
+c:\Camtasia\TextPad - Getting the Most out of TextPad\TextPad - Getting the Most out of TextPad.mp4
+ -> File 18 change: -33.6%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute (video version).mp4
+ -> File 19 change: 16.3%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute - v1.1 - screen shot version.mp4
+ -> File 20 change: -42.6%
+
+Total disk space saved: 646.0 MB
+c:\Camtasia\Lotus Improv Guided Tour - included with Improv in 1993\Lotus Improv Guided Tour - included with Improv in 1993.mp4
+ -> File 1 change: -66.4%
+c:\Camtasia\Mighty Boosh\Mighty Boosh - I Love the Chosen One.mp4
+ -> File 2 change: -46.0%
+c:\Camtasia\Mighty Boosh - Old Greg clip - The Importance of Telling a Story\The Mighty Boosh [2003-2007] - S02,E05 - The Legend of Old Gregg.mp4
+ -> File 3 change: -35.3%
+c:\Camtasia\Moose's Soap Box - Nuclear Power\Moose's Soap Box - Nuclear Power.mp4
+ -> File 4 change: -40.2%
+c:\Camtasia\Moose's Software - Mosaics - How to Create Mosacis of Images (Windows)\Mosaics - How to Create Mosacis of Images (Windows).mp4
+ -> File 5 change: -41.1%
+c:\Camtasia\Moose's Software - Sound Board - Lenny\Sound Board - Lenny.mp4
+ -> File 6 change: -32.5%
+c:\Camtasia\Pool Leak Saga - Episode 02 - 06-Jun\Pool Leak Saga - 02.mp4
+ -> File 7 change: -49.7%
+c:\Camtasia\Predator The Musical (Arnold Schwarzenegger) - Fixed Audio\Predator The Musical (Arnold Schwarzenegger) - broken audio.mp4
+ -> File 8 change: -4.3%
+c:\Camtasia\Predator-Prey - Bears and Fish - Part 2\Predator-Prey - Bears and Fish - Part 2.mp4
+ -> File 9 change: -29.5%
+c:\Camtasia\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 02\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 02.mp4
+ -> File 10 change: -30.4%
+c:\Camtasia\PSA - Putting Fireworks in Your Back Passage May NOT be a Good idea\PSA - Putting Fireworks in Your Back Passage May NOT be a Good idea.mp4
+ -> File 11 change: -36.7%
+c:\Camtasia\SciFi - Loneliness and Mental Health - Star Trek, Space 1999\SciFi - Loneliness and Mental Health - video - v0.2 - drastically reduce clip lengths.mp4
+ -> File 12 change: -42.3%
+c:\Camtasia\SciFi - Space 1999 - Farewell Moonbase Alpha\SciFi - Space 1999 - Farewell Moonbase Alpha - v0.2 - I read Prof Bergman's speech to avoid Copyright Bullshit.mp4
+ -> File 13 change: -50.2%
+c:\Camtasia\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker)\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker) - v0.1.mp4
+ -> File 14 change: -43.3%
+c:\Camtasia\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker)\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker) - v0.3.mp4
+ -> File 15 change: -43.2%
+c:\Camtasia\SciFi FAQ - Star Trek - Can Vulcans Sing\SciFi FAQ - Star Trek - Can Vulcans Sing - v1.0 - got Copyright Claim.mp4
+ -> File 16 change: -43.6%
+c:\Camtasia\SciFi FAQ - Star Trek - How to SLAP a Vulcan\SciFi FAQ - Star Trek - How to SLAP a Vulcan - v0.2.mp4
+ -> File 17 change: -49.1%
+c:\Camtasia\TextPad - Getting the Most out of TextPad\TextPad - Getting the Most out of TextPad.mp4
+ -> File 18 change: -33.6%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute (video version).mp4
+ -> File 19 change: 16.3%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute - v1.1 - screen shot version.mp4
+ -> File 20 change: -42.6%
+
+Total disk space saved: 646.0 MB
+c:\Camtasia\Aboriginal Meeting Respect\Aboriginal Meeting Respect - 2021-09-02.mp4
+ -> File 1 change: -34.3%
+c:\Camtasia\Animals\Animals - Hank Tribute\Poochie - Hank Tribute.mp4
+ -> File 2 change: -65.8%
+c:\Camtasia\Apple 2, Retrocomputers\Apple 2 - APPriLE - 2021-04-05 - Running Apple 2 Emulators on Modern PCs - Getting Started Guide\Apple 2 - APPriLE - 2021-04-02 - Running Apple 2 Emulators on Modern PCs - Getting Started Guide - v0.02.mp4
+ -> File 3 change: -36.0%
+c:\Camtasia\Apple 2, Retrocomputers\Apple 2 Games - Sunraycer Racing with the Sun\Apple 2 Games - Sunraycer Racing with the Sun.mp4
+ -> File 4 change: -23.8%
+c:\Camtasia\Audiobook - COBOL - Beginning Cobol for Programmers\Audiobook - COBOL - Beginning Cobol for Programmers - Part 01 - Chapter 1, Page 1.mp4
+ -> File 5 change: -12.2%
+c:\Camtasia\Beach - 04 - Capricorn Coast water, waves, tranquility with Piano\Beach - 04 - Capricorn Coast water, waves, tranquility with Piano.mp4
+ -> File 6 change: -33.5%
+c:\Camtasia\Camtasia Studio - Crashes Again and Again and Again - 2019-11-22\Camtasia Studio - Crashes - 2019-11-22.mp4
+ -> File 7 change: -33.9%
+c:\Camtasia\Camtasia Studio - In-Depth Review - Warning Strong Language\Camtasia Studio - In-Depth Review - Warning Strong Language.mp4
+ -> File 8 change: -52.1%
+c:\Camtasia\Centacare\Centacare - Autocentral and Navman Checker - 2021-07-06 - Janet B\Centacare - Autocentral and Navman Checker - 2021-07-06.mp4
+ -> File 9 change: -53.3%
+c:\Camtasia\Centacare\Centacare - FELIX - Finance Extract Tool - v0.165.245 - Video for Nikkia and Janet\Centacare - FELIX - Finance Extract Tool - v0.165.245 - Video for Nikkia and Janet.mp4
+ -> File 10 change: -34.3%
+c:\Camtasia\Centacare\Centacare - Github - git pull SQL with and without TRACE\Centacare - Github - git pull SQL with and without TRACE.mp4
+ -> File 11 change: -36.9%
+c:\Camtasia\Centacare\Centacare - QCSS OMS Web Portal - Upload Issues - 2021-01-17\Centacare - QCSS OMS Web Portal - Upload Issues.mp4
+ -> File 12 change: -38.9%
+c:\Camtasia\Centacare\Centacare - Staff Need Vs Availability Heatmap - v0.50\Centacare - Staff Need Vs Availability Heatmap - v0.50.mp4
+ -> File 13 change: -41.8%
+c:\Camtasia\Centacare\Centacare - xCommunicate - Emergency Communication Tool - v0.0060\Centacare - xCommunicate - Map Region Tool.mp4
+ -> File 14 change: -26.1%
+c:\Camtasia\Centacare\Centacare - xCommunicate - Emergency Communication Tool - v0.0062\Emergency Communication Tool - v0.0062 - LBRY Exclusive.mp4
+ -> File 15 change: -36.9%
+c:\Camtasia\Centacare\Centacare - xCommunicate - Emergency Communication Tool - v0.0071\Centacare - xCommunicate - Emergency Communication Tool - v0.0071.02.mp4
+ -> File 16 change: -40.0%
+c:\Camtasia\Centacare\Centacare - xCommunicate - Emergency Communication Tool - v0.0072 (10 mins)\Centacare - xCommunicate - Emergency Communication Tool - v0.0072 - streamlined.mp4
+ -> File 17 change: -37.4%
+c:\Camtasia\Centacare\Power Apps - 01 - My First Power App\Power Apps - 01 - My First Power App.mp4
+ -> File 18 change: -53.5%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 01 - Lecture recording\COIT11134 - 2020-T2 - Week 01 - Lecture recording.mp4
+ -> File 19 change: -32.9%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 02 - Lecture recording\COIT11134 - 2020-T2 - Week 02 - Lecture recording.mp4
+ -> File 20 change: -33.2%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 04 - Lecture recording\COIT11134 - 2020-T2 - Week 04 - Lecture recording.mp4
+ -> File 21 change: -32.8%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 05 - Lecture recording\COIT11134 - 2020-T2 - Week 05 - Lecture recording.mp4
+ -> File 22 change: -33.8%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 06 - Lecture recording\COIT11134 - 2020-T2 - Week 06 - Lecture recording.mp4
+ -> File 23 change: -33.5%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 07 - Lecture recording\COIT11134 - 2020-T2 - Week 07 - Lecture recording.mp4
+ -> File 24 change: -33.8%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 08 - Lecture recording\COIT11134 - 2020-T2 - Week 08 - Lecture recording.mp4
+ -> File 25 change: -34.4%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 09 - Lecture recording\COIT11134 - 2020-T2 - Week 09 - Lecture recording.mp4
+ -> File 26 change: -32.0%
+c:\Camtasia\COIT11134\COIT11134 - 2020-T2 - Week 10 - Lecture recording\COIT11134 - 2020-T2 - Week 10 - Lecture recording.mp4
+ -> File 27 change: -29.8%
+c:\Camtasia\COIT11134\COIT11134 - Exam Question - 2018-T1 - Q3+4\Exam Question - 2018-T1 - Q3+4.mp4
+ -> File 28 change: -18.6%
+c:\Camtasia\COIT11134\COIT11134 - Exam Question - 2018-T2 - Q5b\Exam Question - 2018-T2 - Q5b.mp4
+ -> File 29 change: -16.2%
+c:\Camtasia\COIT11134\COIT11134 - Student - 2019-T2 - Tianna Jackson - 2019-08-25 - Ass 1\2019-T2 - Tianna - Ass 1.mp4
+ -> File 30 change: -31.8%
+c:\Camtasia\COIT11134\COIT11134 - Student - 2020-T2 - Amy Oliveri - 2020-08-26 - Ass 1\COIT11134 - Student - 2020-T2 - Amy Oliveri - 2020-08-26 - Ass 1.mp4
+ -> File 31 change: -34.2%
+c:\Camtasia\COIT11134\COIT11134 - Student - 2020-T2 - Jarrod Silk - 2020-08-26 - Ass 1\COIT11134 - Student - 2020-T2 - Jarrod Silk - 2020-08-26 - Ass 1.mp4
+ -> File 32 change: -31.3%
+c:\Camtasia\COIT11134\COIT11134 - Student - 2020-T2 - Nicholas - 2020-08-26 - Ass 1\COIT11134 - Student - 2020-T2 - Nicholas - 2020-08-26 - Ass 1.mp4
+ -> File 33 change: -39.1%
+c:\Camtasia\COIT11134\COIT11134 - Student - 2020-T2 - Nicholas - 2020-09-18 - Ass 2\COIT11134 - Student - 2020-T2 - Nicholas - 2020-09-18 - Ass 2.mp4
+ -> File 34 change: -39.9%
+c:\Camtasia\COIT11134\COIT11134 - Student - 2020-T2 - Nicholas - 2020-09-21 - Ass 2\COIT11134 - Student - 2020-T2 - Nicholas - 2020-09-21 - Ass 2.mp4
+ -> File 35 change: -31.7%
+c:\Camtasia\COIT11134\COIT11134 - Student - 2020-T2 - Tinashe Paul Songore - 2020-08-26 - Ass 1\COIT11134 - Student - 2020-T2 - Tinashe Paul Songore - 2020-08-26 - Ass 1.mp4
+ -> File 36 change: -38.9%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 03 - Lecture recording\COIT11222 - 2020-T1 - Week 03 - Lecture recording.mp4
+ -> File 37 change: -18.1%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 03 - Tutorial recording\COIT11222 - 2020-T1 - Week-03 - Tutorial recording.mp4
+ -> File 38 change: -31.8%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 04 - Tutorial recording\COIT11222 - 2020-T1 - Week 04 - Tutorial recording.mp4
+ -> File 39 change: -32.4%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 05 - Lecture recording\COIT11222 - 2020-T1 - Week 05 - Lecture recording.mp4
+ -> File 40 change: -32.4%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 06 - Lecture recording\COIT11222 - 2020-T1 - Week 06 - Lecture recording.mp4
+ -> File 41 change: -32.9%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 06 - Tutorial recording\COIT11222 - 2020-T1 - Week 06 - Tutorial recording.mp4
+ -> File 42 change: -33.3%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 07 - Lecture recording\COIT11222 - 2020-T1 - Week 07 - Lecture recording.mp4
+ -> File 43 change: -35.1%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 07 - Tutorial recording\COIT11222 - 2020-T1 - Week 07 - Tutorial recording.mp4
+ -> File 44 change: -34.3%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 08 - Lecture recording\COIT11222 - 2020-T1 - Week 08 - Lecture recording.mp4
+ -> File 45 change: -33.9%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 08 - Tutorial recording\COIT11222 - 2020-T1 - Week 08 - Tutorial recording.mp4
+ -> File 46 change: -35.9%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 09 - Lecture recording\Bruce M's Lecture from Course Web Page\week9All.mp4
+ -> File 47 change: -8.7%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 09 - Tutorial recording\COIT11222 - 2020-T1 - Week 09 - Tutorial recording.mp4
+ -> File 48 change: -36.4%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 10 - Lecture recording\COIT11222 - 2020-T1 - Week 10 - Lecture recording.mp4
+ -> File 49 change: -34.3%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 10 - Tutorial recording\COIT11222 - 2020-T1 - Week 10 - Tutorial recording.mp4
+ -> File 50 change: -35.2%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 11 - Lecture recording\COIT11222 - 2020-T1 - Week 11 - Lecture recording.mp4
+ -> File 51 change: -33.0%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 11 - Tutorial recording\COIT11222 - 2020-T1 - Week 11 - Tutorial recording.mp4
+ -> File 52 change: -31.7%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 12 - Lecture recording\COIT11222 - 2020-T1 - Week 12 - Lecture recording.mp4
+ -> File 53 change: -33.3%
+c:\Camtasia\COIT11222\COIT11222 - 2020-T1 - Week 12 - Tutorial recording\COIT11222 - 2020-T1 - Week 12 - Tutorial recording.mp4
+ -> File 54 change: -34.2%
+c:\Camtasia\COIT11222\COIT11222 - Basic Java Console Apps - Week 02 - TicketNumber\COIT11222 - Basic Java Console Apps - Week 02 - TicketNumber.mp4
+ -> File 55 change: -27.2%
+c:\Camtasia\COIT11222\COIT11222 - Basic Java Console Apps - Week 03 - CellPhoneService\COIT11222 - Basic Java Console Apps - Week 03 - CellPhoneService.mp4
+ -> File 56 change: -30.8%
+c:\Camtasia\COIT11222\COIT11222 - Basic Java Console Apps - Week 03 - PastPresentFuture\COIT11222 - Basic Java Console Apps - Week 03 - PastPresentFuture.mp4
+ -> File 57 change: -31.0%
+c:\Camtasia\COIT11222\COIT11222 - Basic Java Console Apps - Week 04 - DiagonalOs\COIT11222 - Basic Java Console Apps - Week 04 - DiagonalOs.mp4
+ -> File 58 change: -26.0%
+c:\Camtasia\COIT11222\COIT11222 - Basic Java Console Apps - Week 04 - Purchase\COIT11222 - Basic Java Console Apps - Week 04 - Purchase.mp4
+ -> File 59 change: -26.6%
+c:\Camtasia\COIT11222\COIT11222 - Basic Java Console Apps - Week 05 - Sandwich\COIT11222 - Basic Java Console Apps - Week 05 - Sandwich.mp4
+ -> File 60 change: -26.9%
+c:\Camtasia\COIT11222\COIT11222 - Student - 2020-04-24 - Andrew Gemmell - Assig 2\COIT11222 - Student - 2020-04-24 - Andrew Gemmell - Assig 2.mp4
+ -> File 61 change: -36.2%
+c:\Camtasia\COIT11222\COIT11222 - Student - 2020-04-24 - Tinashe Paul Songore - Assig 1\COIT11222 - Student - 2020-04-24 - Tinashe Paul Songore - Assig 1.mp4
+ -> File 62 change: -36.4%
+c:\Camtasia\COIT11222\COIT11222 - Student - 2020-05-17 - Andrew Gemmell - Assig 2\COIT11222 - Student - 2020-05-17 - Andrew Gemmell - Assig 2.mp4
+ -> File 63 change: -37.5%
+c:\Camtasia\Comedy - Morecombe and Wise - Mastermind\Morecombe and Wise - Mastermind.mp4
+ -> File 64 change: -17.8%
+c:\Camtasia\Cryptocurrency - Bitcoin - Boom or Bust\Cryptocurrency - Bitcoin - Boom or Bust.mp4
+ -> File 65 change: -10.2%
+c:\Camtasia\Dates - Year 2038 Issue\Dates - Year 2038 Issue.mp4
+ -> File 66 change: -31.2%
+c:\Camtasia\Dev Log - Pixel Artist - Part 01\Dev Log - Pixel Artist - Part 01 - LBRY First.mp4
+ -> File 67 change: -23.5%
+c:\Camtasia\Dev Log - Pixel Artist - Part 02\Dev Log - Pixel Artist - Part 02.mp4
+ -> File 68 change: -36.2%
+c:\Camtasia\Disease - 2020-03-10 - Coronavirus Spread World Map Animation\Disease - Coronavirus Spread World Map Animation - 2020-03-10.mp4
+ -> File 69 change: -33.7%
+c:\Camtasia\Disease - 2020-03-13b - Coronavirus Mortality Rate Analysis\Disease - 2020-03-13b - Coronavirus Mortality Rate Analysis.mp4
+ -> File 70 change: -38.5%
+c:\Camtasia\Disease - 2020-03-21 - Coronavirus Spread World Map Animation - Latest News\Disease - 2020-03-21 - Coronavirus Spread World Map Animation - Latest News.mp4
+ -> File 71 change: -36.5%
+c:\Camtasia\Disease - 2020-07-09 - Coronavirus Spread World Map Animation - 12 Million Cases, 550 thousand Deaths\Disease - 2020-07-09 - Coronavirus Spread World Map Animation - 12 Million Cases, 550 thousand Deaths.mp4
+ -> File 72 change: -29.0%
+c:\Camtasia\Disease - 2020-07-28 - Coronavirus Spread World Map Animations (2)\Disease - 2020-07-28 - Coronavirus Spread World Map Animation - Mortality Rate (Deaths).mp4
+ -> File 73 change: -50.7%
+c:\Camtasia\Drivers - Bad, Idiots - 2021-03-29 - Speeding driver crashes into Ute - Beenleigh QLD\Drivers - Bad, Idiots - 2021-03-29 - Speeding driver crashes into Ute - Beenleigh QLD.mp4
+ -> File 74 change: -53.1%
+c:\Camtasia\Drivers Bad - Curb Your Karen - E02 - Woman doesnt give way, crashes, starts swearing (UK)\Drivers Bad - Curb Your Karen - E02 - Woman doesnt give way, crashes, starts swearing (UK).mp4
+ -> File 75 change: -54.9%
+c:\Camtasia\Fake News - Racist White Baby Attacks Black baby\Fake News - Racist White Baby Attacks Black baby.mp4
+ -> File 76 change: -48.8%
+c:\Camtasia\Garden - Murray's Baby Carrots\Garden - Murray's Baby Carrots.mp4
+ -> File 77 change: -49.8%
+c:\Camtasia\Hindi\Hindi Sexy Story 01.mp4
+ -> File 78 change: -28.1%
+c:\Camtasia\Hindi\OLD\Hindi Sexy Story 01.mp4
+ -> File 79 change: -27.0%
+c:\Camtasia\How to Remove the Background from an Image\How to Remove the Background from an Image.mp4
+ -> File 80 change: -30.8%
+c:\Camtasia\Installing Java SDK and TextPad\Installing Java SDK and TextPad.mp4
+ -> File 81 change: -45.7%
+c:\Camtasia\Invest - Shares - 2021-02-02 - GameStop (GME)\Invest - Shares - GameStop (GME) - 2021-02-02.mp4
+ -> File 82 change: -29.9%
+c:\Camtasia\Invest - Shares - 2021-02-03 - Stock Market With Bruce\Invest - Shares - Stock Market With Bruce - short and funny.mp4
+ -> File 83 change: -47.1%
+c:\Camtasia\Invest - Shares - 2021-02-04 - GameStop (GME)\Invest - Shares - GameStop (GME) - 2021-02-04.mp4
+ -> File 84 change: -22.7%
+c:\Camtasia\Invest - Shares - 2021-03-20 - Fail to Deliver (FTD)\Invest - Shares - 2021-03-20 - Fail to Deliver (FTD) - v0.01.mp4
+ -> File 85 change: 2.2%
+c:\Camtasia\Java Dev\Build Your Own Software with Moose - S01,E01 - Physical Activity Move And Stretch Coach\Physical Activity Move And Stretch Coach - E01 - Project Overview.mp4
+ -> File 86 change: -40.8%
+c:\Camtasia\Java Dev\Build Your Own Software with Moose - S01,E03 - Physical Activity Move And Stretch Coach\Physical Activity Move And Stretch Coach - E03 - Timers and ProgressBars.mp4
+ -> File 87 change: -37.3%
+c:\Camtasia\Java Dev\Build Your Own Software with Moose - S01,E05 - Physical Activity Move And Stretch Coach\Build Your Own Software with Moose - S01,E05 - Physical Activity Move And Stretch Coach.mp4
+ -> File 88 change: -34.2%
+c:\Camtasia\Java Dev\Build Your Own Software with Moose - S02,E02 - Password Generator\Build Your Own Software with Moose - S02,E02 - Password Generator.mp4
+ -> File 89 change: -34.7%
+c:\Camtasia\Java Dev\Java - Arrays, ArrayLists, and ComboBoxes - How To\Java - Add Array and ArrayList to ComboBox.mp4
+ -> File 90 change: -32.5%
+c:\Camtasia\Java Dev\Java - Database - SQL Server Database - Console App basics - Part 02\Java - Database - SQL Server Database - Console App basics - Part 02.mp4
+ -> File 91 change: -70.5%
+c:\Camtasia\Java Dev\Java - Java v1.1 Going Back to the Beginning\Java - Java v1.1 Going Back to the Beginning.mp4
+ -> File 92 change: -100.0%
+c:\Camtasia\Java Dev\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 02\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 02.mp4
+ -> File 93 change: -100.0%
+c:\Camtasia\Java Dev\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 05 - Design, Controller, MVC\Java - LinkedLists - Students GUI - Add, Delete, Display - Part 05 - Controller, MVC.mp4
+ -> File 94 change: -31.5%
+c:\Camtasia\Java Dev\Java - NetBeans - Convert Project to NetBeans and NetBeans GUI Builder\Java - NetBeans - Convert Project to NetBeans and NetBeans GUI Builder.mp4
+ -> File 95 change: -100.0%
+c:\Camtasia\Java OS - JX - the Java Operating System (OS)\Java OS - JX - the Java Operating System (OS).mp4
+ -> File 96 change: -100.0%
+c:\Camtasia\JavaScript - Snake - Make Your Own SNAKE Game\JavaScript - Snake - Make Your Own SNAKE Game - Part 01.mp4
+ -> File 97 change: -100.0%
+c:\Camtasia\Jean Hinton - Minding Jean via WebCam - 5 minute sample\Jean Hinton - Minding Jean via WebCam - 5 minute sample.mp4
+ -> File 98 change: -8.3%
+c:\Camtasia\LBRY\LBRY - 01 - Paid Content - Cheap\LBRY - Paid Content - Cheap.mp4
+ -> File 99 change: -34.0%
+c:\Camtasia\LBRY\LBRY - 03 - Getting Started Guide - First Steps\LBRY - 03 - Getting Started Guide - First Steps.mp4
+ -> File 100 change: -14.9%
+c:\Camtasia\LBRY\LBRY - 05 - Unlock Tips and Supports and Add to another Item - Live Demo\LBRY - Unlock Tips and Supports and Add to another Item - Live Demo.mp4
+ -> File 101 change: -29.4%
+c:\Camtasia\LBRY\LBRY - 07 - LBRY Reward for GitHub Developers\LBRY Reward for GitHub Developers.mp4
+ -> File 102 change: -34.2%
+c:\Camtasia\LBRY\LBRY - 08 - YouTube Farewell\YouTube Farewell - v1.02 - longer Therman laugh at end, remove fade ins, outs.mp4
+ -> File 103 change: -26.5%
+c:\Camtasia\LBRY\LBRY - 10 - Disaster Strikes - Views and Tips CRASH - How to Recover - 6-Jun-2020\LBRY - Disaster Strikes - Views and Tips CRASH - How to Recover - 6-Jun-2020.mp4
+ -> File 104 change: -22.3%
+c:\Camtasia\LBRY\LBRY - 13 - First 7 Views Per Day\LBRY - 13 - First 7 Views Per Day.mp4
+ -> File 105 change: -38.8%
+c:\Camtasia\LBRY\LBRY - 15 - YouTube's Attack on Creators - Who is Really Behind the Demonitisations, Deletions, etc\LBRY - 15 - YouTube's Attack on Creators - Who is Really Behind the Demonetizations, Deletions, etc.mp4
+ -> File 106 change: -52.4%
+c:\Camtasia\LBRY\LBRY - 16 - 2 Months on LBRY\LBRY - 16 - 2 Months on LBRY - How are things going.mp4
+ -> File 107 change: -22.2%
+c:\Camtasia\LBRY\LBRY - 18 - How much LBC do you need to Stake Your Content\LBRY - 18 - How much LBC do you need to Stake Your Content.mp4
+ -> File 108 change: -21.6%
+c:\Camtasia\LBRY\LBRY - 20 - What I wish Big YouTubers were Doing on LBRY\LBRY - 20 - What I wish Big YouTubers were Doing on LBRY.mp4
+ -> File 109 change: -15.4%
+c:\Camtasia\LBRY\LBRY - 22 - LBRY got hacked - 48 hours to save it - MooseValley's Response\LBRY - 22 - LBRY got hacked - 48 hours to save it - MooseValley's Response.mp4
+ -> File 110 change: -40.4%
+c:\Camtasia\LBRY\LBRY - 23 - Creator Rewards 2.0 Explained (29-Aug-2020)\LBRY - 23 - Creator Rewards 2.0 Explained (29-Aug-2020).mp4
+ -> File 111 change: -16.6%
+c:\Camtasia\LBRY\LBRY - 25 - Star Trek - Captain Kirk found the SAFEST Place\LBRY - 25 - Star Trek - Captain Kirk found the SAFEST Place - v1.04 - add dramatic title screen music.mp4
+ -> File 112 change: -46.5%
+c:\Camtasia\LBRY\LBRY - 26 - Join the LBRY community on Reddit - r, LBRY, and r,LBRYlnks reaches 50 members\OLD\LBRY - 26 - Reddit, r, LBRY, and r,LBRYlnks reaches 50 members ... Woo Hoo !!.mp4
+ -> File 113 change: -37.8%
+c:\Camtasia\LBRY\LBRY - 28 - Creator Rewards 2.0 - The RESULT\LBRY - 28 - Creator Rewards 2.0 - The RESULT.mp4
+ -> File 114 change: -34.5%
+c:\Camtasia\LBRY\LBRY - 30 - I've got a Nasty Stalker\LBRY - 30 - I've got a Nasty Stalker - v1.01.mp4
+ -> File 115 change: -44.9%
+c:\Camtasia\Lotus Improv - Live Demonstration and Discussion - The Greatest Software of ALL Time\Lotus Improv - Live Demo.mp4
+ -> File 116 change: -33.1%
+c:\Camtasia\MEMES, YouTube People, etc\Oblivion - 01 - We've got them, Hello Boys.mp4
+ -> File 117 change: -48.0%
+c:\Camtasia\Mighty Boosh - Old Greg clip - The Importance of Telling a Story\Mighty Boosh - Old Greg clip - The Importance of Telling a Story.mp4
+ -> File 118 change: -47.5%
+c:\Camtasia\Moose's Soap Box - Junk Mail Catalogs\WIN_20191016_12_46_52_Pro.mp4
+ -> File 119 change: -1.1%
+c:\Camtasia\Moose's Software - Big Mouse Pointer\Big Mouse Pointer.mp4
+ -> File 120 change: -36.1%
+c:\Camtasia\Moose's Software - Nixie Clock - v1.3\Nixie Clock - v1.3.mp4
+ -> File 121 change: -38.2%
+c:\Camtasia\Moose's Software - SETI WOW Signal - Recreating a SETI WOW Data File\SETI WOW Signal - Recreating a SETI WOW Data File.mp4
+ -> File 122 change: -20.2%
+c:\Camtasia\Moose's Software - Sound Effects Sound Board\Sound Effects Sound Board.mp4
+ -> File 123 change: -28.7%
+c:\Camtasia\Pool Leak Saga - Episode 01 - 31-May\Pool Leak Saga - 01.mp4
+ -> File 124 change: -44.0%
+c:\Camtasia\Pool Leak Saga - Episode 03 - 20-Jun\Pool Leak Saga - 03.mp4
+ -> File 125 change: -54.9%
+c:\Camtasia\Predator The Musical (Arnold Schwarzenegger) - Fixed Audio\Predator The Musical (Arnold Schwarzenegger) - Fixed Audio.mp4
+ -> File 126 change: -45.8%
+c:\Camtasia\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 01\Programming - How to Solve, Start, Do Big Programming Assignments and Projects - Part 01.mp4
+ -> File 127 change: -30.1%
+c:\Camtasia\Programming - I HATE Programming\Programming - I HATE Programming.mp4
+ -> File 128 change: -41.2%
+c:\Camtasia\PSA - Fire Hazard - Detail Doctor Instant Restorer - WARNING\PSA - Fire Hazard - Detail Doctor Instant Restorer - WARNING.mp4
+ -> File 129 change: -20.9%
+c:\Camtasia\Quad Bike Kinka Trails - 2019-12-04\2019-12-04 - Quad Bike Trails.mp4
+ -> File 130 change: -62.0%
+c:\Camtasia\Quad Bike Thunderstorm Breakdown - Episode 02 - Start-up, Check\Quad Bike Thunderstorm Breakdown - Episode 02 - Start-up, Check.mp4
+ -> File 131 change: -53.0%
+c:\Camtasia\SciFi - Loneliness and Mental Health - Star Trek, Space 1999\SciFi - Loneliness and Mental Health - video - v0.1 - checkout copyright implications.mp4
+ -> File 132 change: -36.8%
+c:\Camtasia\SciFi - Space 1999 - Farewell Moonbase Alpha\SciFi - Space 1999 - Farewell Moonbase Alpha - v0.1.mp4
+ -> File 133 change: -49.7%
+c:\Camtasia\SciFi - Space 1999 VS The Singularity\SciFi - Space 1999 VS The Singularity (The Infernal Machine) - v0.4 - add time of the key Bergman Speech clip.mp4
+ -> File 134 change: -41.9%
+c:\Camtasia\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker)\SciFi FAQ - Star Trek - Amazing Acting - Part 01 - William Windom (aka Commodore Matt Decker) - v0.2.mp4
+ -> File 135 change: -42.3%
+c:\Camtasia\SciFi FAQ - Star Trek - Can Cats Open Sensor Doors\SciFi FAQ - Star Trek - Can Cats Open Sensor Doors   What does Spock think about Cats -We2lNufzYkQ.mp4
+ -> File 136 change: -21.6%
+c:\Camtasia\SciFi FAQ - Star Trek - Can Vulcans Sing\SciFi FAQ - Star Trek - Can Vulcans Sing - v1.1 - short Bilbo Baggins.mp4
+ -> File 137 change: -45.5%
+c:\Camtasia\Stocks - WallStreetBets - Ape Can Feel It\Stocks - WallStreetBets - Ape Can Feel It.mp4
+ -> File 138 change: -44.5%
+c:\Camtasia\Storms, Floods - 2021-03-22 - Friends Are Entering the DANGER ZONE\Storms, Floods - 2021-03-22 - Friends Are Entering the DANGER ZONE - v0.2 - add Aus map.mp4
+ -> File 139 change: -2.4%
+c:\Camtasia\Tractor - Mad Max Tractor\Mad Max Tractor.mp4
+ -> File 140 change: -61.2%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute (screen shot version).mp4
+ -> File 141 change: 7.9%
+c:\Camtasia\Tribute - Phosphorescent Wolves song and Margin Call movie tribute\Phosphorescent Wolves song and Margin Call movie tribute - v1.0.mp4
+ -> File 142 change: -34.9%
+c:\Camtasia\University - PhD, Masters - My Experience and FAILING to Complete a PhD (and Masters)\PhD, Masters - My Experience and FAILING to Complete a PhD (and Masters).mp4
+ -> File 143 change: -35.6%
+c:\Camtasia\University - Phd, Masters - Should I get a PhD and,or Masters\Phd, Masters - Should I get a PhD and,or Masters.mp4
+ -> File 144 change: -25.0%
+c:\Camtasia\YouTube Scammer Accusation - CALL APPLE web link\YouTube Scammer Accusation - CALL APPLE web link.mp4
+ -> File 145 change: -41.1%
+
+Total disk space saved: 6.8 GB

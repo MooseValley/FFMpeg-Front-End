@@ -433,11 +433,11 @@ public class FFMpegFrontEnd extends JFrame
                // The MP4 file and the "*_ff.mp4" exist ... remove both from the arraylist.
                // Must remove the maxIndex first ... because everything after this shuffles down.
                // If we removed minIndex first, then we would have to remove maxIndex - 1.
-               filesArrayList.remove (maxIndex);
+               //filesArrayList.remove (maxIndex);
 
                if (minIndex != maxIndex)
                {
-                  filesArrayList.remove (minIndex);
+                  //filesArrayList.remove (minIndex);
                }
             }
          }
@@ -475,9 +475,6 @@ public class FFMpegFrontEnd extends JFrame
 
 
 
-      System.out.println ("-> " + filesArrayList.size() + " MP4 files to be processed.");
-
-
       for (int k = 0; k < filesArrayList.size(); k++)
       {
          System.out.println (k + ". " + filesArrayList.get(k).toString() ); // File name with full absolute path.
@@ -488,7 +485,8 @@ public class FFMpegFrontEnd extends JFrame
       long totalFileSizeBytes = getSizeOfAllFilesInArrayList (filesArrayList);
 
       System.out.println ();
-      System.out.println ("Total size: " + Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalFileSizeBytes, 1) );
+      System.out.println ("-> " + filesArrayList.size() + " MP4 files to be processed.");
+      System.out.println ("-> Total size: " + Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalFileSizeBytes, 1) );
 
       resultsTextArea.append ("-> " + filesArrayList.size() + " MP4 files listed." + "\n");
    }
@@ -533,7 +531,7 @@ public class FFMpegFrontEnd extends JFrame
           File sourceFile = filesArrayList.get(k);
           File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (sourceFile, "_ff");
 
-          if (Moose_Utils.fileExists (destFile)              == false)
+          //if (Moose_Utils.fileExists (destFile)              == false)
           {
              totalFiles++;
           }
@@ -546,7 +544,7 @@ public class FFMpegFrontEnd extends JFrame
           File sourceFile = filesArrayList.get(k);
           File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (sourceFile, "_ff");
 
-          if (Moose_Utils.fileExists (destFile)              == false)
+          //if (Moose_Utils.fileExists (destFile)              == false)
           {
              fileCount++;
 
