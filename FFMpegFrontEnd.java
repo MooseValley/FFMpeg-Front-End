@@ -1,4 +1,4 @@
- /*
+/*
  Author: Mike O'Malley
  Source File: FFMpegFrontEnd.java
  Description: TBA ... :)
@@ -111,6 +111,9 @@ public class FFMpegFrontEnd extends JFrame
    private static final String LOG_FILE                     = "FFMpegFrontEnd_log.txt";
 
    private static final String DOWNLOAD_BAT_FILE            = "00_download_youtube_files.bat";
+   private static final String SUPPORTED_INPUT_FILE_TYPES   = "MP4,AVI,MOV";
+   private static final String DEFAULT_INPUT_VIDEO_FOLDER   = "C:\\000 - TEMP\\Breaking Bad\\"; // "c:\\Camtasia\\";
+
 
    private static final String YOUTUBEDL_COMMAND_LINE_DEFAULT_VIDEO_STR = "youtube-dl.exe ";
    private static final String YOUTUBEDL_COMMAND_LINE_MP4_VIDEO_STR     = "youtube-dl.exe -f mp4 ";
@@ -327,7 +330,8 @@ public class FFMpegFrontEnd extends JFrame
       fontScalerMouseWheelListener.setFontScale (fontScale);
 
       //folderPathTextField.setText ("c:\\Camtasia\\Apple 2 - APPriLE - 2021-04-17 - My Apple 2+, my First Tape, Disk, etc\\");
-      folderPathTextField.setText ("c:\\Camtasia\\");
+      folderPathTextField.setText (DEFAULT_INPUT_VIDEO_FOLDER);
+
    }
 
    private void saveApplicationSettings ()
@@ -354,7 +358,7 @@ public class FFMpegFrontEnd extends JFrame
 
 
 
-
+   // Build list of supported video files.  Ref: SUPPORTED_INPUT_FILE_TYPES
    private void buildMP4FilesList ()
    {
       // File.toString(): File name with full absolute path.
@@ -369,20 +373,20 @@ public class FFMpegFrontEnd extends JFrame
       System.out.println ("-> " + filesArrayList.size() + " files found.");
 
 
-      // (1). Remove NON-MP4 files from the filesArrayList.
+      // (1). Remove all NON SUPPORTED files from the filesArrayList.  Ref: SUPPORTED_INPUT_FILE_TYPES
       // Go in reverse to save an IF test.
       for (int k = filesArrayList.size() - 1; k >= 0; k--)
       {
          String fileNameStr = filesArrayList.get(k).toString(); // File name with full absolute path.
-         String fileExtensionStr = Moose_Utils.getFileExtensionFromStr (fileNameStr); // Returns "java"
+         String fileExtensionStr = Moose_Utils.getFileExtensionFromStr (fileNameStr).toUpperCase();
 
-         if (fileExtensionStr.equalsIgnoreCase ("mp4") == false)
+         if (SUPPORTED_INPUT_FILE_TYPES.indexOf (fileExtensionStr, 0) < 0)
          {
             filesArrayList.remove (k);
          }
       }
 
-      System.out.println ("-> " + filesArrayList.size() + " MP4 files found.");
+      System.out.println ("-> " + filesArrayList.size() + SUPPORTED_INPUT_FILE_TYPES + " supported video files found.");
 
       /*
       for (int k = 0; k < filesArrayList.size(); k++)
@@ -392,9 +396,9 @@ public class FFMpegFrontEnd extends JFrame
       */
 
 
-      // (2). If an MP4 file already has a corressponding "_ff.MP4" processed version,
+      // (2). If an MP4, AVI, MOV file already has a corressponding "_ff.MP4" processed version,
       //      remove both from the filesArrayList.
-
+/*
       for (int k = 0; k < filesArrayList.size(); k++)
       {
          String fileNameStr = filesArrayList.get(k).toString(); // File name with full absolute path.
@@ -405,16 +409,15 @@ public class FFMpegFrontEnd extends JFrame
             int index = -1;
 
             String ffMPeggedFileNameStr = Moose_Utils.addFileNamePrefixBeforeExtensionFromStr (fileNameStr, "_ff");
+            ffMPeggedFileNameStr = Moose_Utils.setNewFileExtensionFromFile (ffMPeggedFileNameStr, "mp4");
 
             //System.out.println (" --> searching for '" + ffMPeggedFileNameStr + "' ...");
 
             for (int m = 0; m < filesArrayList.size(); m++)
             {
-               /*
-               System.out.println ("--> Files match ? : '" + ffMPeggedFileNameStr +
-                   "'  VS  '" + filesArrayList.get(k).toString() +
-                   "': '"     + ffMPeggedFileNameStr.equalsIgnoreCase (filesArrayList.get(m).toString() ) );
-               */
+               //System.out.println ("--> Files match ? : '" + ffMPeggedFileNameStr +
+               //    "'  VS  '" + filesArrayList.get(k).toString() +
+               //    "': '"     + ffMPeggedFileNameStr.equalsIgnoreCase (filesArrayList.get(m).toString() ) );
 
                if ((m != k) &&
                    (ffMPeggedFileNameStr.equalsIgnoreCase (filesArrayList.get(m).toString() ) == true) ) // File name with full absolute path.
@@ -430,7 +433,7 @@ public class FFMpegFrontEnd extends JFrame
                int minIndex = Math.min (index, k);
                int maxIndex = Math.max (index, k);
 
-               // The MP4 file and the "*_ff.mp4" exist ... remove both from the arraylist.
+               // The MP4, AVI, MOV file and the "*_ff.mp4" exist ... remove both from the arraylist.
                // Must remove the maxIndex first ... because everything after this shuffles down.
                // If we removed minIndex first, then we would have to remove maxIndex - 1.
                //filesArrayList.remove (maxIndex);
@@ -443,24 +446,34 @@ public class FFMpegFrontEnd extends JFrame
          }
       }
 
-      System.out.println ("-> " + filesArrayList.size() + " Non-FFMpeg'd MP4 files found (no corressponding '_ff.mp4').");
+      System.out.println ("-> " + filesArrayList.size() + " Non-FFMpeg'd MP4, AVI, MOV files found (no corressponding '_ff.mp4').");
+*/
 
 
-      // (3).  Remove "_ff.MP4" files and their original ".mp4" file - these have already been processed.
+      // (3).  Add "_ff.MP4" files to ArrayList.
       // (4).  Remove Zoom lecture recordings (they are already FFMpeg'd)
       //       Remove Video Camera files.
       //       Remove common folder files.
       // Go in reverse to save an IF test.
+
+      ArrayList<String> fFMPegedMP4FilesArrayList = new ArrayList<String>();
+
       for (int k = filesArrayList.size() - 1; k >= 0; k--)
       {
          String fileNameStr      = filesArrayList.get(k).toString(); // File name with full absolute path.
-         String fileExtensionStr = Moose_Utils.getFileExtensionFromStr (fileNameStr); // Returns "java"
+         String fileExtensionStr = Moose_Utils.getFileExtensionFromStr (fileNameStr);
 
          // File.getName():  File name (no path).
          String fileNameNoPathStr  = filesArrayList.get(k).getName().trim(); // File name (no path).
 
-         if ((fileNameStr.toLowerCase().endsWith ("_ff.mp4")                 == true) ||
-             (fileNameStr.toLowerCase().contains ("00_common_files")         == true) ||
+         if (fileNameStr.toLowerCase().endsWith ("_ff.mp4")                 == true)
+         {
+            fFMPegedMP4FilesArrayList.add (fileNameStr);
+
+            filesArrayList.remove (k);
+         }
+
+         else if ((fileNameStr.toLowerCase().contains ("00_common_files")    == true) ||
              (fileNameNoPathStr.toLowerCase().startsWith ("zoom_")           == true) ||
              (fileNameNoPathStr.toLowerCase().startsWith ("mah0")            == true) ||
              (fileNameNoPathStr.toLowerCase().startsWith ("sam_")            == true) ||
@@ -473,6 +486,27 @@ public class FFMpegFrontEnd extends JFrame
          }
       }
 
+      // (3).  For each "_ff.MP4" file, remove the original MP4, AVI, MOV file -
+      //       as these have already been processed.
+      for (int ff = 0; ff < fFMPegedMP4FilesArrayList.size(); ff++)
+      {
+         // If the FFMPeged file is: abc_ff.mp4
+         // then look for abc.mp4, abc,avi, abc.mov and remove all of these.
+         String fileNameStr     = fFMPegedMP4FilesArrayList.get(ff);
+         String mp4FileStr      = fileNameStr.replace ("_ff", "");
+         String aviFileStr      = Moose_Utils.setNewFileExtensionFromFile (mp4FileStr, "avi");
+         String movFileStr      = Moose_Utils.setNewFileExtensionFromFile (mp4FileStr, "mov");
+
+         for (int k = filesArrayList.size() - 1; k >= 0; k--)
+         {
+            if ((filesArrayList.get(k).toString().compareToIgnoreCase (mp4FileStr) == 0) ||
+                (filesArrayList.get(k).toString().compareToIgnoreCase (aviFileStr) == 0) ||
+                (filesArrayList.get(k).toString().compareToIgnoreCase (movFileStr) == 0) )
+            {
+               filesArrayList.remove(k);
+            }
+         }
+      }
 
 
       for (int k = 0; k < filesArrayList.size(); k++)
@@ -485,10 +519,10 @@ public class FFMpegFrontEnd extends JFrame
       long totalFileSizeBytes = getSizeOfAllFilesInArrayList (filesArrayList);
 
       System.out.println ();
-      System.out.println ("-> " + filesArrayList.size() + " MP4 files to be processed.");
+      System.out.println ("-> " + filesArrayList.size() + " MP4, AVI, MOV files to be processed.");
       System.out.println ("-> Total size: " + Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalFileSizeBytes, 1) );
 
-      resultsTextArea.append ("-> " + filesArrayList.size() + " MP4 files listed." + "\n");
+      resultsTextArea.append ("-> " + filesArrayList.size() + " MP4, AVI, MOV files listed." + "\n");
    }
 
    private long getSizeOfAllFilesInArrayList (ArrayList<File> filesArrayList)
@@ -528,10 +562,13 @@ public class FFMpegFrontEnd extends JFrame
       // ffmpeg.exe -i a.mp4 a_ff.mp4
       for (int k = 0; k < filesArrayList.size(); k++)
       {
-          File sourceFile = filesArrayList.get(k);
+          File sourceFile = filesArrayList.get(k); // could be any of the supported video files.  Ref: SUPPORTED_INPUT_FILE_TYPES
           File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (sourceFile, "_ff");
 
-          //if (Moose_Utils.fileExists (destFile)              == false)
+          // Make sure the destFile has an mp4 extension.
+          destFile = Moose_Utils.setNewFileExtensionFromFile (destFile, "mp4");
+
+          if (Moose_Utils.fileExists (destFile)              == false)
           {
              totalFiles++;
           }
@@ -541,10 +578,13 @@ public class FFMpegFrontEnd extends JFrame
       // ffmpeg.exe -i a.mp4 a_ff.mp4
       for (int k = 0; k < filesArrayList.size(); k++)
       {
-          File sourceFile = filesArrayList.get(k);
+          File sourceFile = filesArrayList.get(k); // could be any of the supported video files.  Ref: SUPPORTED_INPUT_FILE_TYPES
           File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (sourceFile, "_ff");
 
-          //if (Moose_Utils.fileExists (destFile)              == false)
+          // Make sure the destFile has an mp4 extension.
+          destFile = Moose_Utils.setNewFileExtensionFromFile (destFile, "mp4");
+
+          if (Moose_Utils.fileExists (destFile)              == false)
           {
              fileCount++;
 

@@ -994,3 +994,5 @@ c:\Camtasia\YouTube Scammer Accusation - CALL APPLE web link\YouTube Scammer Acc
  -> File 145 change: -41.1%
 
 Total disk space saved: 6.8 GB
+
+Total disk space saved: 0.0 bytes
