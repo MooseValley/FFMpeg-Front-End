@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.09";
+   private static final String APPLICATION_VERSION          = "v0.11";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -386,7 +386,7 @@ public class FFMpegFrontEnd extends JFrame
          }
       }
 
-      System.out.println ("-> " + filesArrayList.size() + SUPPORTED_INPUT_FILE_TYPES + " supported video files found.");
+      System.out.println ("-> " + filesArrayList.size() + " " + SUPPORTED_INPUT_FILE_TYPES + " supported video files found.");
 
       /*
       for (int k = 0; k < filesArrayList.size(); k++)
@@ -486,6 +486,7 @@ public class FFMpegFrontEnd extends JFrame
          }
       }
 
+/*
       // (3).  For each "_ff.MP4" file, remove the original MP4, AVI, MOV file -
       //       as these have already been processed.
       for (int ff = 0; ff < fFMPegedMP4FilesArrayList.size(); ff++)
@@ -507,7 +508,7 @@ public class FFMpegFrontEnd extends JFrame
             }
          }
       }
-
+*/
 
       for (int k = 0; k < filesArrayList.size(); k++)
       {
@@ -629,10 +630,18 @@ public class FFMpegFrontEnd extends JFrame
           File sourceFile = filesArrayList.get(k);
           File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
 
+          // Make sure the destFile has an mp4 extension.
+          destFile = Moose_Utils.setNewFileExtensionFromFile (destFile, "mp4");
+
+
           if (Moose_Utils.fileExists (destFile)              == true)
           {
              long sourceFileBytes = Moose_Utils.getFileSizeBytes (sourceFile);
              long destFileBytes   = Moose_Utils.getFileSizeBytes (destFile);
+
+             System.out.println ();
+             System.out.println (sourceFile.toString() + " --> " + sourceFileBytes + " bytes.");
+             System.out.println (destFile.toString()   + " --> " + destFileBytes   + " bytes.");
 
 
              // If destFile has been shrunk but not TOO much and is in acceptable limits:
@@ -685,10 +694,18 @@ public class FFMpegFrontEnd extends JFrame
           File sourceFile = filesArrayList.get(k);
           File destFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_ff");
 
+          // Make sure the destFile has an mp4 extension.
+          destFile = Moose_Utils.setNewFileExtensionFromFile (destFile, "mp4");
+
           if (Moose_Utils.fileExists (destFile)              == true)
           {
              long sourceFileBytes = Moose_Utils.getFileSizeBytes (sourceFile);
              long destFileBytes   = Moose_Utils.getFileSizeBytes (destFile);
+
+             System.out.println ();
+             System.out.println (sourceFile.toString() + " --> " + sourceFileBytes + " bytes.");
+             System.out.println (destFile.toString()   + " --> " + destFileBytes   + " bytes.");
+
 
              if ((destFileBytes > (long) sourceFileBytes * 0.20) &&
                  (destFileBytes < (long) sourceFileBytes * 0.90) &&
