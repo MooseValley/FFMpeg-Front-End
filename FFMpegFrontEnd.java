@@ -630,10 +630,10 @@ public class FFMpegFrontEnd extends JFrame
       sb.append ("pause"            + "\n");
 
       resultsTextArea.append ("-> " + totalFiles + " MP4 files to be processed in '" +
-                              "generateMP4_ff_files.bat" + "'." + "\n");
+                              "generate_MP4_ff_files.bat" + "'." + "\n");
 
 
-      Moose_Utils.writeOrAppendStringToFile ("generateMP4_ff_files.bat", sb.toString(), false);
+      Moose_Utils.writeOrAppendStringToFile ("generate_MP4_ff_files.bat", sb.toString(), false);
    }
 
    private void generateDeleteRedundantMp4Bat ()
