@@ -1088,3 +1088,83 @@ C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E13 - Full Measure.avi
  -> File 33 change: -56.5%
 
 Total disk space saved: 4.5 GB
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S01,E01 - Pilot.mp4
+ -> File 1 change: Infinity%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E01 - Seven Thirty-Seven.avi
+ -> File 8 change: -52.1%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E02 - Grilled.avi
+ -> File 9 change: -40.6%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E03 - Bit by a Dead Bee.avi
+ -> File 10 change: -54.6%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E04 - Down.avi
+ -> File 11 change: -41.5%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E05 - Breakage.avi
+ -> File 12 change: -43.3%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E06 - Peekaboo.avi
+ -> File 13 change: -46.5%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E07 - Negro Y Azul.avi
+ -> File 14 change: -44.1%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E08 - Better Call Saul.avi
+ -> File 15 change: -52.0%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E09 - 4 Days Out.avi
+ -> File 16 change: -47.5%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E10 - Over.avi
+ -> File 17 change: -42.4%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E11 - Mandala.avi
+ -> File 18 change: -46.3%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E12 - Phoenix.avi
+ -> File 19 change: -48.0%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S02,E13 - ABQ.avi
+ -> File 20 change: -42.8%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E01 - No Mas.avi
+ -> File 21 change: -42.0%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E02 - Caballo sin Nombre.avi
+ -> File 22 change: -42.4%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E03 - IFT.avi
+ -> File 23 change: -49.2%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E04 - Green Light.avi
+ -> File 24 change: -46.9%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E05 - Mas.avi
+ -> File 25 change: -46.2%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E06 - Sunset.avi
+ -> File 26 change: -45.6%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E07 - One Minute.avi
+ -> File 27 change: -50.6%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E08 - I See You.avi
+ -> File 28 change: -45.7%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E09 - Kafkaesque.avi
+ -> File 29 change: -47.9%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E10 - Fly.avi
+ -> File 30 change: -49.6%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E11 - Abiquiu.avi
+ -> File 31 change: -51.5%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E12 - Half Measures.avi
+ -> File 32 change: -52.4%
+C:\000 - TEMP\Breaking Bad\Breaking Bad - S03,E13 - Full Measure.avi
+ -> File 33 change: -56.5%
+C:\000 - TEMP\Gettin' Square [2003,Ugly Dave Gray].avi
+ -> File 343 change: -38.3%
+C:\000 - TEMP\Master And Commander.mp4
+ -> File 351 change: -82.0%
+C:\000 - TEMP\Raging Bull.mp4
+ -> File 352 change: -46.6%
+C:\000 - TEMP\Sixth Sense, The.mp4
+ -> File 353 change: -29.4%
+
+Total disk space saved: 5.6 GB
+C:\000 - TEMP\Escape from LA (1996).mp4
+ -> File 4 change: -49.4%
+C:\000 - TEMP\Gettin' Square [2003,Ugly Dave Gray].avi
+ -> File 6 change: -38.3%
+C:\000 - TEMP\Lord of the Rings - 1 - Fellowship Of The Ring - Special Extended Edition (3h,38m).mp4
+ -> File 11 change: -36.7%
+C:\000 - TEMP\Master And Commander.mp4
+ -> File 14 change: -57.6%
+C:\000 - TEMP\Never Mind The Buzzcocks - S..,E03 - Jack Dee With Katy Brand, Eliza Doolittle, Charlie Higson, Jedward.mp4
+ -> File 15 change: -4.1%
+C:\000 - TEMP\Raging Bull.mp4
+ -> File 19 change: -46.6%
+C:\000 - TEMP\Sixth Sense, The.mp4
+ -> File 20 change: -29.4%
+
+Total disk space saved: 3.9 GB
