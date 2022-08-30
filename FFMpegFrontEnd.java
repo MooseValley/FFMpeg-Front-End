@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.13";
+   private static final String APPLICATION_VERSION          = "v0.14";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -714,7 +714,10 @@ public class FFMpegFrontEnd extends JFrame
 
       resultsTextArea.setText("");
 
-      long totalBytesReduction = 0;
+      long totalBytesReduction  = 0;
+      long totalSourceFileBytes = 0;
+      long totalDestFileBytes   = 0;
+
 
       for (int k = 0; k < filesArrayList.size(); k++)
       {
@@ -728,33 +731,44 @@ public class FFMpegFrontEnd extends JFrame
           {
              long sourceFileBytes = Moose_Utils.getFileSizeBytes (sourceFile);
              long destFileBytes   = Moose_Utils.getFileSizeBytes (destFile);
+             long bytesReduction  = 0;
 
              System.out.println ();
              System.out.println (sourceFile.toString() + " --> " + sourceFileBytes + " bytes.");
              System.out.println (destFile.toString()   + " --> " + destFileBytes   + " bytes.");
 
-
-             if ((destFileBytes > (long) sourceFileBytes * 0.20) &&
-                 (destFileBytes < (long) sourceFileBytes * 0.90) &&
-                 (destFileBytes > 1000) )
-             {
-               totalBytesReduction += sourceFileBytes - destFileBytes;
-             }
-
-             // new=55 old=60
+             // Test data: new=55 old=60
              // fileChangePct = 100.0 * (55 - 60) / 60 = -8.3%
              double fileChangePct = 100.0 * (destFileBytes - sourceFileBytes)  / sourceFileBytes;
 
+             // Exclude files that have negligible savings.
+             //if ((destFileBytes > (long) sourceFileBytes * 0.20) &&
+             //    (destFileBytes < (long) sourceFileBytes * 0.90) &&
+             //    (destFileBytes > 1000) )
+             //if (fileChangePct < -5.0) // Even simpler !
+             //{
+                bytesReduction       =  sourceFileBytes - destFileBytes;
+                totalBytesReduction  += bytesReduction;
+
+                totalSourceFileBytes += sourceFileBytes;
+                totalDestFileBytes   += destFileBytes;
+             //}
+
              resultsTextArea.append (sourceFile.toString()  + "\n");
-             resultsTextArea.append (" -> File " + (k+1) + " change: " + String.format ("%.1f", fileChangePct) + "%" + "\n");
+             resultsTextArea.append (" -> File " + (k+1) + " saved: " +
+                                     Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (bytesReduction, 1)
+                                     + " (" + String.format ("%.1f", fileChangePct) + "%)" + "\n");
           }
       }
 
-      System.out.println ();
-      System.out.println ("Total disk space saved: " +  Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalBytesReduction, 1) );
+      double totalFileChangePct = 100.0 * (totalDestFileBytes - totalSourceFileBytes)  / totalSourceFileBytes;
 
-      resultsTextArea.append ("" + "\n");
-      resultsTextArea.append ("Total disk space saved: " + Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalBytesReduction, 1) + "\n");
+      String summaryStr = "\n" + "*** Total disk space saved: " +
+                          Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalBytesReduction, 1)
+                          + " (" + String.format ("%.1f", totalFileChangePct) + "%)" + "\n" + "\n";
+
+      System.out.println     (summaryStr);
+      resultsTextArea.append (summaryStr);
 
       Moose_Utils.writeOrAppendStringToFile ("file_change_pct_and_disk_space_reduction.txt", resultsTextArea.getText(), true);
    }
