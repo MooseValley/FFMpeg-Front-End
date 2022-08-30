@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.12";
+   private static final String APPLICATION_VERSION          = "v0.13";
    private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -111,7 +111,7 @@ public class FFMpegFrontEnd extends JFrame
    private static final String LOG_FILE                     = "FFMpegFrontEnd_log.txt";
 
    private static final String DOWNLOAD_BAT_FILE            = "00_download_youtube_files.bat";
-   private static final String SUPPORTED_INPUT_FILE_TYPES   = "MP4,AVI,MOV,FLV";
+   private static final String SUPPORTED_INPUT_FILE_TYPES   = "MP4,AVI,MOV,FLV,M4V,MPG,";
    private static final String DEFAULT_INPUT_VIDEO_FOLDER   = "C:\\000 - TEMP\\"; // "c:\\Camtasia\\";
 
 
