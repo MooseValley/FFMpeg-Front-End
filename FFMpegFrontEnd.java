@@ -98,8 +98,8 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.14";
-   private static final String APPLICATION_TITLE            = "FFMpegFrontEnd – " + APPLICATION_VERSION;
+   private static final String APPLICATION_VERSION          = "v0.15";
+   private static final String APPLICATION_TITLE            = "FFMpeg Front End – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
    private static final int    FRAME_WIDTH                  = 950;
@@ -412,7 +412,8 @@ public class FFMpegFrontEnd extends JFrame
          }
       }
 
-      System.out.println ("-> " + filesArrayList.size() + " " + SUPPORTED_INPUT_FILE_TYPES + " supported video files found.");
+      System.out.println ("-> " + filesArrayList.size() +
+                          " " + SUPPORTED_INPUT_FILE_TYPES + " supported video files found.");
 
       /*
       for (int k = 0; k < filesArrayList.size(); k++)
@@ -508,6 +509,10 @@ public class FFMpegFrontEnd extends JFrame
              (fileNameStr.toLowerCase().contains ("zoom_")                   == true) ||
              (fileNameStr.toLowerCase().contains ("zoom-meeting-invitation") == true) )
          {
+            // Exclude files containing these strings ... Zoom, Digital Camera recordings, etc
+            // are all the smalles files in my tests.
+            // If they are re-processed with FFmpeg they are bigger files !!
+
             filesArrayList.remove (k);
          }
       }
@@ -546,10 +551,12 @@ public class FFMpegFrontEnd extends JFrame
       long totalFileSizeBytes = getSizeOfAllFilesInArrayList (filesArrayList);
 
       System.out.println ();
-      System.out.println ("-> " + filesArrayList.size() + " MP4, AVI, MOV files to be processed.");
+      System.out.println ("-> " + filesArrayList.size() +
+                          " " + SUPPORTED_INPUT_FILE_TYPES + " files to be processed.");
       System.out.println ("-> Total size: " + Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (totalFileSizeBytes, 1) );
 
-      resultsTextArea.append ("-> " + filesArrayList.size() + " MP4, AVI, MOV files listed." + "\n");
+      resultsTextArea.append ("-> " + filesArrayList.size() + " " +
+                              SUPPORTED_INPUT_FILE_TYPES + "files listed." + "\n");
    }
 
    private long getSizeOfAllFilesInArrayList (ArrayList<File> filesArrayList)
@@ -629,7 +636,8 @@ public class FFMpegFrontEnd extends JFrame
       sb.append ("echo DONE !"      + "\n");
       sb.append ("pause"            + "\n");
 
-      resultsTextArea.append ("-> " + totalFiles + " MP4 files to be processed in '" +
+      resultsTextArea.append ("-> " + totalFiles +
+                              " " + SUPPORTED_INPUT_FILE_TYPES + " files to be processed in '" +
                               "generate_MP4_ff_files.bat" + "'." + "\n");
 
 
@@ -717,6 +725,7 @@ public class FFMpegFrontEnd extends JFrame
       long totalBytesReduction  = 0;
       long totalSourceFileBytes = 0;
       long totalDestFileBytes   = 0;
+      int  count = 0;
 
 
       for (int k = 0; k < filesArrayList.size(); k++)
@@ -754,8 +763,10 @@ public class FFMpegFrontEnd extends JFrame
                 totalDestFileBytes   += destFileBytes;
              //}
 
+             count++;
+
              resultsTextArea.append (sourceFile.toString()  + "\n");
-             resultsTextArea.append (" -> File " + (k+1) + " saved: " +
+             resultsTextArea.append (" -> File " + (count) + " saved: " +
                                      Moose_Utils.scaleBytesToKBMBGBTBWithUnitsStr (bytesReduction, 1)
                                      + " (" + String.format ("%.1f", fileChangePct) + "%)" + "\n");
           }
