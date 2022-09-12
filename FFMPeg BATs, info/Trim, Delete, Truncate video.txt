@@ -1,0 +1,5 @@
+https://superuser.com/questions/377343/cut-part-from-video-file-from-start-position-to-end-position-with-ffmpeg
+
+ffmpeg -i inputFile -c copy -ss 00:09:23 -to 00:25:33 outputFile
+
+ffmpeg -i "my video.mp4" -c copy -ss 00:09:23 -to 00:25:33 "my video2.mp4"

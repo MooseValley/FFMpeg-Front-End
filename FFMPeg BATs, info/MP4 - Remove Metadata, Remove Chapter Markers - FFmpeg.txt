@@ -1,0 +1,10 @@
+If you are fine with rewriting (not recompressing) a file, you can use ffmpeg to do it:
+
+ffmpeg -i /path/to/input.mp4 -map 0 -map_metadata -1 -c copy /path/to/output.mp4
+
+REF: https://herrbischoff.com/2020/09/how-to-remove-metadata-from-mp4-files/
+
+>How to remove tags and chapters?
+ust add -map_metadata -1 -map_chapters -1
+
+https://www.reddit.com/r/ffmpeg/comments/gnrmap/how_to_remove_tags_and_chapters/

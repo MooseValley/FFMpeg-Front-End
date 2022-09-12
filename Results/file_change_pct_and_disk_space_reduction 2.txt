@@ -1788,3 +1788,160 @@ C:\000 - TEMP\Sammi the Cocker Spaniel - 03 - dinner time - MAH00175.MP4
 
 *** Total disk space saved: -866,900.0 bytes (10.3%)
 
+
+*** Total disk space saved: 0.0 bytes (NaN%)
+
+C:\000 - TEMP\Auntie Mame [1958, Rosalind Russell].mp4
+ -> File 1 saved: 464.8 MB (-37.9%)
+C:\000 - TEMP\Brady Bunch - 01 - The Brady Bunch Movie.mp4
+ -> File 2 saved: 363.3 MB (-34.5%)
+C:\000 - TEMP\Hello Dolly.mp4
+ -> File 3 saved: 1.7 GB (-95.1%)
+
+*** Total disk space saved: 2.5 GB (-62.0%)
+
+C:\000 - TEMP\Auntie Mame [1958, Rosalind Russell].mp4
+ -> File 1 saved: 464.8 MB (-37.9%)
+C:\000 - TEMP\Brady Bunch - 01 - The Brady Bunch Movie.mp4
+ -> File 2 saved: 363.3 MB (-34.5%)
+C:\000 - TEMP\Hello Dolly.mp4
+ -> File 3 saved: 589.0 MB (-33.3%)
+C:\000 - TEMP\Jack Reacher [2013,Tom Cruise].mp4
+ -> File 4 saved: 201.9 MB (-26.0%)
+C:\000 - TEMP\Lawrence Of Arabia - Original Wide Screen version - Part 1.mp4
+ -> File 5 saved: 469.8 MB (-35.0%)
+C:\000 - TEMP\Lawrence Of Arabia - Original Wide Screen version - Part 2.mp4
+ -> File 6 saved: 284.7 MB (-34.1%)
+C:\000 - TEMP\Mame [1974, Lucille Ball].mp4
+ -> File 7 saved: 479.2 MB (-40.3%)
+C:\000 - TEMP\Master And Commander.mp4
+ -> File 8 saved: 944.1 MB (-57.6%)
+C:\000 - TEMP\Naked Jungle. The [1954,Charlton Heston].mp4
+ -> File 9 saved: 462.8 MB (-37.9%)
+C:\000 - TEMP\Sister Act.mp4
+ -> File 10 saved: 607.3 MB (-50.6%)
+C:\000 - TEMP\The Sound Of Music.mp4
+ -> File 11 saved: 1.2 GB (-55.5%)
+
+*** Total disk space saved: 6.0 GB (-42.0%)
+
+C:\000 - TEMP\Auntie Mame [1958, Rosalind Russell].mp4
+ -> File 1 saved: 464.8 MB (-37.9%)
+C:\000 - TEMP\Brady Bunch - 01 - The Brady Bunch Movie.mp4
+ -> File 2 saved: 363.3 MB (-34.5%)
+C:\000 - TEMP\Hello Dolly.mp4
+ -> File 3 saved: 589.0 MB (-33.3%)
+C:\000 - TEMP\Jack Reacher [2013,Tom Cruise].mp4
+ -> File 4 saved: 201.9 MB (-26.0%)
+C:\000 - TEMP\Lawrence Of Arabia - Original Wide Screen version - Part 1.mp4
+ -> File 5 saved: 469.8 MB (-35.0%)
+C:\000 - TEMP\Lawrence Of Arabia - Original Wide Screen version - Part 2.mp4
+ -> File 6 saved: 284.7 MB (-34.1%)
+C:\000 - TEMP\Mame [1974, Lucille Ball].mp4
+ -> File 7 saved: 479.2 MB (-40.3%)
+C:\000 - TEMP\Master And Commander.mp4
+ -> File 8 saved: 944.1 MB (-57.6%)
+C:\000 - TEMP\Naked Jungle. The [1954,Charlton Heston].mp4
+ -> File 9 saved: 462.8 MB (-37.9%)
+C:\000 - TEMP\Sister Act.mp4
+ -> File 10 saved: 607.3 MB (-50.6%)
+C:\000 - TEMP\The Sound Of Music.mp4
+ -> File 11 saved: 1.2 GB (-55.5%)
+
+*** Total disk space saved: 6.0 GB (-42.0%)
+
+C:\000 - TEMP\Auntie Mame [1958, Rosalind Russell].mp4
+ -> File 1 saved: 464.8 MB (-37.9%)
+C:\000 - TEMP\Brady Bunch - 01 - The Brady Bunch Movie.mp4
+ -> File 2 saved: 363.3 MB (-34.5%)
+C:\000 - TEMP\Hello Dolly.mp4
+ -> File 3 saved: 589.0 MB (-33.3%)
+C:\000 - TEMP\Jack Reacher [2013,Tom Cruise].mp4
+ -> File 4 saved: 201.9 MB (-26.0%)
+C:\000 - TEMP\Mame [1974, Lucille Ball].mp4
+ -> File 5 saved: 479.2 MB (-40.3%)
+C:\000 - TEMP\Master And Commander.mp4
+ -> File 6 saved: 944.1 MB (-57.6%)
+C:\000 - TEMP\Naked Jungle. The [1954,Charlton Heston].mp4
+ -> File 7 saved: 462.8 MB (-37.9%)
+C:\000 - TEMP\Red Dog [2011,Australia].avi
+ -> File 8 saved: 315.7 MB (-37.2%)
+C:\000 - TEMP\Sister Act.mp4
+ -> File 9 saved: 607.3 MB (-50.6%)
+C:\000 - TEMP\The Hunger [1983,Catherine Deneuve,David Bowie,Susan Sarandon,Vampires,Horror].avi
+ -> File 10 saved: 435.4 MB (-59.4%)
+C:\000 - TEMP\The Sound Of Music.mp4
+ -> File 11 saved: 1.2 GB (-55.5%)
+C:\000 - TEMP\The Wild Geese.mp4
+ -> File 12 saved: 548.6 MB (-35.8%)
+C:\000 - TEMP\To the Manor Born - S01,E01.avi
+ -> File 13 saved: 149.4 MB (-64.0%)
+
+*** Total disk space saved: 6.7 GB (-43.3%)
+
+C:\000 - TEMP\Auntie Mame [1958, Rosalind Russell].mp4
+ -> File 1 saved: 464.8 MB (-37.9%)
+C:\000 - TEMP\Brady Bunch - 01 - The Brady Bunch Movie.mp4
+ -> File 2 saved: 363.3 MB (-34.5%)
+C:\000 - TEMP\Hello Dolly.mp4
+ -> File 3 saved: 589.0 MB (-33.3%)
+C:\000 - TEMP\Jack Reacher [2013,Tom Cruise].mp4
+ -> File 4 saved: 201.9 MB (-26.0%)
+C:\000 - TEMP\Mame [1974, Lucille Ball].mp4
+ -> File 5 saved: 479.2 MB (-40.3%)
+C:\000 - TEMP\Master And Commander.mp4
+ -> File 6 saved: 944.1 MB (-57.6%)
+C:\000 - TEMP\Naked Jungle. The [1954,Charlton Heston].mp4
+ -> File 7 saved: 462.8 MB (-37.9%)
+C:\000 - TEMP\Red Dog [2011,Australia].avi
+ -> File 8 saved: 315.7 MB (-37.2%)
+C:\000 - TEMP\Sister Act.mp4
+ -> File 9 saved: 607.3 MB (-50.6%)
+C:\000 - TEMP\The Hunger [1983,Catherine Deneuve,David Bowie,Susan Sarandon,Vampires,Horror].avi
+ -> File 10 saved: 435.4 MB (-59.4%)
+C:\000 - TEMP\The Sound Of Music.mp4
+ -> File 11 saved: 1.2 GB (-55.5%)
+C:\000 - TEMP\The Wild Geese.mp4
+ -> File 12 saved: 548.6 MB (-35.8%)
+C:\000 - TEMP\To the Manor Born - S01,E01.avi
+ -> File 13 saved: 53.4 MB (-22.9%)
+C:\000 - TEMP\Two Mules For Sister Sara [1969,Western,Clint Eastwood, Shirley MacLane].avi
+ -> File 14 saved: 370.0 MB (-51.3%)
+C:\000 - TEMP\Wall.Street.Money.Never.Sleeps.2010.720p.BrRip.x264.BOKUTOX.YIFY.mp4
+ -> File 15 saved: -300,361,867.0 bytes (33.7%)
+
+*** Total disk space saved: 6.7 GB (-39.1%)
+
+C:\000 - TEMP\Auntie Mame [1958, Rosalind Russell].mp4
+ -> File 1 saved: 464.8 MB (-37.9%)
+C:\000 - TEMP\Brady Bunch - 01 - The Brady Bunch Movie.mp4
+ -> File 2 saved: 363.3 MB (-34.5%)
+C:\000 - TEMP\Hello Dolly.mp4
+ -> File 3 saved: 589.0 MB (-33.3%)
+C:\000 - TEMP\Jack Reacher [2013,Tom Cruise].mp4
+ -> File 4 saved: 201.9 MB (-26.0%)
+C:\000 - TEMP\Mame [1974, Lucille Ball].mp4
+ -> File 5 saved: 479.2 MB (-40.3%)
+C:\000 - TEMP\Master And Commander.mp4
+ -> File 6 saved: 944.1 MB (-57.6%)
+C:\000 - TEMP\Naked Jungle. The [1954,Charlton Heston].mp4
+ -> File 7 saved: 462.8 MB (-37.9%)
+C:\000 - TEMP\Red Dog [2011,Australia].avi
+ -> File 8 saved: 315.7 MB (-37.2%)
+C:\000 - TEMP\Sister Act.mp4
+ -> File 9 saved: 607.3 MB (-50.6%)
+C:\000 - TEMP\Snows of Kilimanjaro.mp4
+ -> File 10 saved: 1.5 GB (-58.4%)
+C:\000 - TEMP\The Hunger [1983,Catherine Deneuve,David Bowie,Susan Sarandon,Vampires,Horror].avi
+ -> File 11 saved: 435.4 MB (-59.4%)
+C:\000 - TEMP\The Sound Of Music.mp4
+ -> File 12 saved: 1.2 GB (-55.5%)
+C:\000 - TEMP\The Wild Geese.mp4
+ -> File 13 saved: 548.6 MB (-35.8%)
+C:\000 - TEMP\To the Manor Born - S01,E01.avi
+ -> File 14 saved: 53.4 MB (-22.9%)
+C:\000 - TEMP\Two Mules For Sister Sara [1969,Western,Clint Eastwood, Shirley MacLane].avi
+ -> File 15 saved: 370.0 MB (-51.3%)
+
+*** Total disk space saved: 8.5 GB (-45.2%)
+

@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.15";
+   private static final String APPLICATION_VERSION          = "v0.16";
    private static final String APPLICATION_TITLE            = "FFMpeg Front End – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -112,6 +112,7 @@ public class FFMpegFrontEnd extends JFrame
 
    private static final String DOWNLOAD_BAT_FILE            = "00_download_youtube_files.bat";
    private static final String SUPPORTED_INPUT_FILE_TYPES   = "MP4,AVI,MOV,FLV,M4V,MPG,";
+   private static final String[] SUPPORTED_INPUT_FILE_TYPES_ARRAY   = SUPPORTED_INPUT_FILE_TYPES.split(",");
    private static final String DEFAULT_INPUT_VIDEO_FOLDER   = "C:\\000 - TEMP\\"; // "c:\\Camtasia\\";
 
 
@@ -493,7 +494,25 @@ public class FFMpegFrontEnd extends JFrame
          // File.getName():  File name (no path).
          String fileNameNoPathStr  = filesArrayList.get(k).getName().trim(); // File name (no path).
 
-         if (fileNameStr.toLowerCase().endsWith ("_ff.mp4")                 == true)
+
+         // v0.016: If a _ff.mp4, _ff.avi, etc of a file already exists, remove it from the list.
+         boolean remove = false;
+         for (int sup = 0; sup < SUPPORTED_INPUT_FILE_TYPES_ARRAY.length; sup++)
+         {
+            if (SUPPORTED_INPUT_FILE_TYPES_ARRAY[sup].length() > 0)
+            {
+               String fileEndStr = "_ff." + SUPPORTED_INPUT_FILE_TYPES_ARRAY[sup].toLowerCase();
+
+               if (fileNameStr.toLowerCase().endsWith (fileEndStr)                 == true)
+               {
+                  remove = true;
+               }
+            }
+         }
+
+
+
+         if (remove  == true)
          {
             fFMPegedMP4FilesArrayList.add (fileNameStr);
 
@@ -695,7 +714,7 @@ public class FFMpegFrontEnd extends JFrame
                 // so get rid of it.
                 sb.append ("del " + "\"" + destFile.toString() + "\"" + "\n" );
 
-                // TODO: rename the original file to "_orig_ff.mp4" so that we don't re-process this file again in the future.
+                // TODO: rename the original file to "_orig_ff" so that we don't re-process this file again in the future.
                 //
                 File newSourceFile   = Moose_Utils.addFileNamePrefixBeforeExtensionFromFile (filesArrayList.get(k), "_orig_ff");
                 Moose_Utils.renameFile (sourceFile, newSourceFile);
