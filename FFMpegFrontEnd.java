@@ -98,7 +98,7 @@ import javax.swing.JComponent;
 public class FFMpegFrontEnd extends JFrame
 {
    // *** CONSTANTS:
-   private static final String APPLICATION_VERSION          = "v0.17";
+   private static final String APPLICATION_VERSION          = "v0.18";
    private static final String APPLICATION_TITLE            = "FFMpeg Front End – " + APPLICATION_VERSION;
    private static final String APPLICATION_AUTHOR           = "Mike O'Malley";
    private static final String APP_NAME_VERSION_AUTHOR      = APPLICATION_TITLE;//+ " - by " + APPLICATION_AUTHOR;
@@ -128,15 +128,16 @@ public class FFMpegFrontEnd extends JFrame
    private JTabbedPane jTabbedPane                     = new JTabbedPane  ();
    private JLabel      applicationTitleLabel           = new JLabel       (" " + APPLICATION_TITLE + " ");
    private JLabel      applicationAuthorLabel          = new JLabel       (""); //"          by " + APPLICATION_AUTHOR + " ");
-   private JTextField  folderPathTextField             = new JTextField   (40);
-   private JButton     scanForFilesButton              = new JButton      ("List Files", Icons.paste_clipboard_icon);
-   //private JButton     pasteMP4VideoButton             = new JButton      ("Paste URLs MP4",           Icons.paste_clipboard_icon);
-   //private JButton     pasteMP3AudioButton             = new JButton      ("Paste URLs MP3 Audio",     Icons.paste_clipboard_icon);
+   private JTextField  folderPathTextField             = new JTextField   (60);
+   private JButton     listFilesButton                 = new JButton      ("List Files", Icons.paste_clipboard_icon);
+ //private JButton     pasteMP4VideoButton             = new JButton      ("Paste URLs MP4",           Icons.paste_clipboard_icon);
+ //private JButton     pasteMP3AudioButton             = new JButton      ("Paste URLs MP3 Audio",     Icons.paste_clipboard_icon);
    private JButton     generateMP4FFBatButton               = new JButton      ("Generate MP4 FF BAT",           Icons.file_save_icon);
+   private JButton     listNonVideoFilesButton              = new JButton      ("List Non-Video FIles",          Icons.report_icon);
    private JButton     generateDeleteRedundantMp4BatButton  = new JButton      ("Generate Delete Redundant MP4 BAT",           Icons.file_save_icon);
    private JButton     generateFFMp4FileSizeChangePercentButton  = new JButton      ("Generate File Change%",           Icons.file_save_icon);
  //private JButton     deleteBATFileButton             = new JButton      ("Reset",    Icons.trash_garbage_icon);
-   //private JButton     appendBATFileButton             = new JButton      ("Append to Download Commands", Icons.file_save_icon);
+ //private JButton     appendBATFileButton             = new JButton      ("Append to Download Commands", Icons.file_save_icon);
    private JButton     aboutButton                     = new JButton      ("Help",     Icons.help_icon);
    private JButton     exitButton                      = new JButton      ("Exit",     Icons.exit_icon);
 
@@ -153,6 +154,7 @@ public class FFMpegFrontEnd extends JFrame
    private FontScalerMouseWheelListener fontScalerMouseWheelListener = new FontScalerMouseWheelListener (this);
 
    private ArrayList<File> filesArrayList;
+   private ArrayList<File> nonVideoFilesArrayList;
 
 
    // Default Constructor:
@@ -226,11 +228,12 @@ public class FFMpegFrontEnd extends JFrame
 
 
       buttonPanel.add (generateMP4FFBatButton);
+      buttonPanel.add (listNonVideoFilesButton);
       buttonPanel.add (generateDeleteRedundantMp4BatButton);
       buttonPanel.add (generateFFMp4FileSizeChangePercentButton);
       buttonPanel.add (new JLabel ("    ") );
 
-      buttonPanel.add (scanForFilesButton);
+      //buttonPanel.add (listFilesButton);
       //buttonPanel.add (pasteMP4VideoButton);
       //buttonPanel.add (pasteMP3AudioButton);
       //buttonPanel.add (new JLabel ("    ") );
@@ -249,7 +252,7 @@ public class FFMpegFrontEnd extends JFrame
       flowPanel.add (new JLabel ("    ") );
 
       flowPanel.add (new JLabel ("Video Folder: ") );
-      flowPanel.add (scanForFilesButton);
+      flowPanel.add (listFilesButton);
       //flowPanel.add (pasteMP4VideoButton);
       //flowPanel.add (pasteMP3AudioButton);
       flowPanel.add (folderPathTextField);
@@ -263,13 +266,15 @@ public class FFMpegFrontEnd extends JFrame
 
       thePanel.add (southPanel,                BorderLayout.SOUTH);
 
-      scanForFilesButton.addActionListener                       (event -> buildMP4FilesList () );
+      listFilesButton.addActionListener                          (event -> buildVideoFilesList () );
       generateMP4FFBatButton.addActionListener                   (event -> generateMP4FFBat () );
       generateDeleteRedundantMp4BatButton.addActionListener      (event -> generateDeleteRedundantMp4Bat () );
       generateFFMp4FileSizeChangePercentButton.addActionListener (event -> generateFFMp4FileSizeChangePercent () );
 
       aboutButton.addActionListener             (event -> Moose_Utils.displayAboutDialog (FFMpegFrontEnd.this, APPLICATION_TITLE, APPLICATION_AUTHOR, ""));
       exitButton.addActionListener              (event -> exitApplication ());
+
+      listNonVideoFilesButton.addActionListener (event -> listNonVideoFiles () );
 
       return thePanel;
    }
@@ -341,15 +346,14 @@ public class FFMpegFrontEnd extends JFrame
          setSize (FRAME_WIDTH, FRAME_HEIGHT);
       }
 
-      folderPathTextField.setText (SaveLoadApplicationSettings.LoadStringKeyValue
-            (INI_FILE_NAME, "folderPathTextField", ""));
-
-
       float fontScale  = SaveLoadApplicationSettings.LoadFloatKeyValue (INI_FILE_NAME, "fontScale", 0.0f);
       fontScalerMouseWheelListener.setFontScale (fontScale);
 
+      folderPathTextField.setText (SaveLoadApplicationSettings.LoadStringKeyValue
+            (INI_FILE_NAME, "folderPathTextField", DEFAULT_INPUT_VIDEO_FOLDER));
+
       //folderPathTextField.setText ("c:\\Camtasia\\Apple 2 - APPriLE - 2021-04-17 - My Apple 2+, my First Tape, Disk, etc\\");
-      folderPathTextField.setText (DEFAULT_INPUT_VIDEO_FOLDER);
+      //folderPathTextField.setText (DEFAULT_INPUT_VIDEO_FOLDER);
 
    }
 
@@ -373,25 +377,29 @@ public class FFMpegFrontEnd extends JFrame
 
       SaveLoadApplicationSettings.SaveFloatKeyValue  (INI_FILE_NAME,
          "fontScale", fontScalerMouseWheelListener.getFontScale ());
+
+      SaveLoadApplicationSettings.SaveStringKeyValue
+            (INI_FILE_NAME, "folderPathTextField", folderPathTextField.getText () );
    }
 
 
 
    // Build list of supported video files.  Ref: SUPPORTED_INPUT_FILE_TYPES
-   private void buildMP4FilesList ()
+   private void buildVideoFilesList ()
    {
       // File.toString(): File name with full absolute path.
       // File.getName():  File name (no path).
+      nonVideoFilesArrayList = new ArrayList<File>();
 
       resultsTextArea.setText("");
 
-      System.out.println ("buildMP4FilesList (): '" + folderPathTextField.getText() + "' ... ");
+      System.out.println ("buildVideoFilesList (): Listing all video files: " + SUPPORTED_INPUT_FILE_TYPES +
+                          " in folder: '" + folderPathTextField.getText() + "' ... ");
 
       if (allSubDirsRadioButton.isSelected() == true)
          filesArrayList = Moose_Utils.getAllFilesInDirecoryAndAllSubDirectories (folderPathTextField.getText() );
       else if (dirOnlyRadioButton.isSelected() == true)
          filesArrayList = Moose_Utils.getAllFilesInDirectory (folderPathTextField.getText() );
-
 
       System.out.println ("-> " + filesArrayList.size() + " files found.");
 
@@ -403,12 +411,14 @@ public class FFMpegFrontEnd extends JFrame
          String fileNameStr      = filesArrayList.get(k).toString(); // File name with full absolute path.
          String fileExtensionStr = Moose_Utils.getFileExtensionFromStr (fileNameStr).toUpperCase();
 
-         System.out.println ("File: "   + fileNameStr);
-         System.out.println ("-> ext: '" + fileExtensionStr + "'");
+         //System.out.println ("File: "   + fileNameStr);
+         //System.out.println ("-> ext: '" + fileExtensionStr + "'");
 
          if ((fileExtensionStr.length() == 0) ||
              (SUPPORTED_INPUT_FILE_TYPES.indexOf (fileExtensionStr, 0) < 0) )
          {
+            nonVideoFilesArrayList.add (filesArrayList.get(k) );
+
             filesArrayList.remove (k);
          }
       }
@@ -562,7 +572,7 @@ public class FFMpegFrontEnd extends JFrame
 
       for (int k = 0; k < filesArrayList.size(); k++)
       {
-         System.out.println (k + ". " + filesArrayList.get(k).toString() ); // File name with full absolute path.
+         //System.out.println (k + ". " + filesArrayList.get(k).toString() ); // File name with full absolute path.
 
          resultsTextArea.append (filesArrayList.get(k).getName() + "\n");
       }
@@ -576,6 +586,7 @@ public class FFMpegFrontEnd extends JFrame
 
       resultsTextArea.append ("-> " + filesArrayList.size() + " " +
                               SUPPORTED_INPUT_FILE_TYPES + "files listed." + "\n");
+
    }
 
    private long getSizeOfAllFilesInArrayList (ArrayList<File> filesArrayList)
@@ -862,6 +873,21 @@ public class FFMpegFrontEnd extends JFrame
 
    }
 */
+
+   private void listNonVideoFiles ()
+   {
+      resultsTextArea.setText ("");
+
+      if ((nonVideoFilesArrayList != null) && (nonVideoFilesArrayList.size() > 0) )
+      {
+         //ArrayList<File> list3ArrayList = Moose_Utils.getArrayListOfItemsInArrayList1AndNotInArrayList2 (allFilesArrayList, filesArrayList);
+
+         Moose_Utils.copyArrayListToJTextArea (nonVideoFilesArrayList, resultsTextArea);
+
+         resultsTextArea.append (" -> " + nonVideoFilesArrayList.size()  + " non-video files found." + "\n");
+      }
+   }
+
 
    public static void main (String args[])
    {
