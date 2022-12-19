@@ -151,3 +151,9 @@ PaymentReceiptSystem__ERROR_LOG.txt
 problem emails analysis.txt
 quotes*.txt
 Results*.txt
+
+generate_MP4_ff_files.bat
+delete_redundant_files.bat
+file_change_pct_and_disk_space_reduction.txt
+*.exe
+*.zip
