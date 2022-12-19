@@ -24,7 +24,7 @@ echo Compile the Java code:
 "%dirlocation%javac.exe" ..\00__common_code\*.java
 copy ..\00__common_code\*.class .
 
-
+del SQL*.class
 
 REM "%dirlocation%javac.exe" -Xlint "FFMpegFrontEnd.java"
 "%dirlocation%javac.exe" "FFMpegFrontEnd.java"
